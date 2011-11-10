@@ -1,0 +1,349 @@
+<!-- This file needs to be edited by the lab developer to suit
+the requirements of their lab in particular.-->
+
+<!-- Add class="default" to include any element as it is
+specified in default.html. 
+Do not include class="default" to the elements that you want to
+edit -->
+
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+
+<div id="experiment"> <!-- The Experiment Document Container-->
+
+  <!-- The lab Header contains the logo and the name of the lab,
+  usually displayed on the top of the page-->
+
+  <header id="experiment-header" class="default">
+  
+    <div id="experiment-header-logo" class="logo">
+      <!-- Enclose the logo image of your lab or write it in 
+      text-->
+      <img src="../images/logo.png" />
+    </div>
+
+    <div id="experiment-header-heading" class="heading">
+      <!-- Write the name of your lab and link it to the home 
+      page of your lab (h1 tag is preferred while writing your 
+      lab name)-->
+      <a href="../index.html">Optical Remote Sensing Lab</a>	
+    </div>
+
+    <!-- Add any additional element you want to add to the lab 
+    header, For example : Help (Enclosing them with suitable 
+    div is recommended)-->
+
+  </header>
+
+
+  <!-- The lab article is the main content area where all the 
+  experiment content sits-->
+  <article id="experiment-article">
+  
+    <!-- The lab article has an header, optional navigational 
+    menu, number of sections, an optional sidebar and a closing 
+    footer-->
+    
+      <header id="experiment-article-heading" class="heading">
+        <!-- You can add a welcome message or title of the 
+        experiment here -->
+       Band Algebra &#45 Index based Analysis
+        <!-- Add any additional element if required with proper 
+        enclosing-->
+      </header>
+
+      <!-- Navigation menu is useful to organize the view of 
+      multiple sections inside the article-->
+      <nav id="experiment-article-navigation" class="default">
+        <ul id="experiment-article-navigation-menu">
+          <!-- The menu can be dynamically generated to contain 
+          the headings of your sections or instead write the 
+          menu items of your choice individually enclosedu in 
+          <li> tag as shown below-->
+        </ul>
+      </nav>
+
+      <!-- All the sections of your lab or experiment can be 
+      enclosed together with a div element as shown below-->
+      <div id="experiment-article-sections">
+
+        <!-- First section of the article-->
+        <section id="experiment-article-section-1">
+          
+          <div id="experiment-article-section-1-icon" 
+          class="icon">
+	    <!-- Enclose the icon image of your lab -->
+	    <img src="../images/introduction.jpg" />
+	  </div>	
+          
+          <!-- The heading for the section can be enclosed in a 
+          div tag. -->
+          <div id="experiment-article-section-1-heading" 
+          class="heading">
+            Introduction
+          </div>
+
+          <!-- Write the section content inside a paragraph 
+          element, You can also include images with <img> tag -->
+          <div id="experiment-article-section-1-content" 
+          class="content">	
+     <h3><u>Vegetation Index:</u></h3>
+<p>
+A Vegetation Index (VI) is a <q>synthetic image layer</q> created from the existing bands of a multispectral image. This new layer often provides unique and valuable information not found in any of the other individual bands. <br>
+
+For example: VI has been shown to quantify or predict vegetation biomass, productivity, leaf area, and/or vegetative ground cover
+</p>
+        </div>
+
+
+      </section>
+
+      <!-- Second section of the article-->
+      <section id="experiment-article-section-2">
+        
+        <div id="experiment-article-section-2-icon" 
+        class="icon">
+	  <!-- Enclose the icon image of your lab. -->
+	  <img src="../images/theory.jpg" />
+	</div>
+				
+        <!-- The heading for the section can be enclosed in a 
+        div tag. -->
+        <div id="experiment-article-section-2-heading" 
+        class="heading">
+          Theory
+        </div>
+
+
+        <!-- Write the section content inside a paragraph 
+        element, we can also include images with <img> tag -->
+        <div id="experiment-article-section-2-content" 
+        class="content">
+<h3>BAND RATIO</h3>
+<p>
+The simplest type of vegetation index, <b>VI</b>, is obtained by dividing the reflectance from the near-infrared band, <b>NIR</b>, by the reflectance from the red visible band, <b>R</b>. <u>The value of the ratio will be greater for increasing amounts of healthy green vegetation.</u> This is because vegetation reflects more strongly in the NIR than in the red visible. <br>
+<i>VI = NIR/R </i>
+</p>
+
+<h3>Normalized Difference Vegetation Index:</h3>
+<p>
+NDVI, Normalized Difference Vegetation Index, is an index calculated from reflectance measured in the visible and near infrared channels. It is related to the fraction of photosynthetically active radiation. NDVI is calculated as <br>
+<i>NDVI = (NIR-R) / (NIR+R) </i><br>
+where NIR is the reflectance in the near-infrared band, and R is the reflectance in the red visible band. The chlorophyll (green pigment) in the vegetation absorbs incoming radiation in the visible band, while the leaf structure and water content is responsible for a very high reflectance in the near-infrared region of the spectrum. NDVI has been correlated to a variety of vegetation parameters, including quantity, productivity, biomass, etc. NDVI is sensitive to certain factors like atmospheric effects, soil effects and clouds. 
+</p>
+
+<h3>Difference Vegetation Index:</h3>
+<p>
+DVI, Difference Vegetation Index, is a vegetation index obtained by subtracting the reflectance in the visible red band from the near-infrared reflectance. DVI is calculated as 
+<br>
+<i>DVI = NIR - R </i><br>
+where NIR is the reflectance in the near-infrared band, and R is the reflectance in red visible band. It is proportional to NDVI. DVI is simpler than NDVI but is prone to measurement errors in the NIR and red because it is not normalized by their sum.
+</p>
+<h3>Transformed Vegetaion Index</h3>
+<p>
+<i> (NDVI + 0.5)<sup>0.5</sup></i>
+</p>
+<h3>Renormalized Difference Vegetaion Index</h3>
+<p>
+<i> (NDVI X DVI)<sup>0.5</sup></i>
+</p>
+<h3>Soil Adjusted Vegetaion Index</h3>
+<p>
+<i> [(NIR - RED)/(NIR + RED + L)]X(1+L)<sup>0.5</sup></i>
+</p>
+<h3>Modified Soil Adjusted Vegetaion Index</h3>
+<p>
+<i> (2NIR + 1)-[(2NIR + 1)<sup>2</sup>-8(NIR -RED)]<sup>0.5</sup>)/2</i>
+</p>
+<h3>Infrared Percentage Vegetaion Index</h3>
+<p>
+<i> NIR /(NIR + RED)</i>
+</p>
+<p>
+NIR = crop reflectance in near infrared band.<br>
+RED = crop reflectance in red band.<br>
+L = constant (taken as 0.5)
+</p>
+
+        </div>
+      </section>
+
+
+      <section id="experiment-article-section-3">
+        
+        <div id="experiment-article-section-3-icon" 
+        class="icon">
+	  <!-- Enclose the icon image of your lab. -->
+	  <img src="../images/objective.jpg" />
+	</div>
+     
+        <div id="experiment-article-section-3-heading" 
+        class="heading">
+          Objective
+        </div>
+
+        <div id="experiment-article-section-3-content" 
+        class="content">
+          _________________________________________________________________________________________________________________________________________
+        </div>
+
+      </section>
+
+
+      <section id="experiment-article-section-4">
+
+        <div id="experiment-article-section-4-icon" 
+        class="icon">
+	  <!-- Enclose the icon image of your lab.-->
+	  <img src="../images/simulation.jpg" />
+	</div>
+
+        <div id="experiment-article-section-4-heading" 
+        class="heading">
+          Experiment
+        </div>
+
+        <div id="experiment-article-section-4-content" 
+        class="content">
+<P>
+<APPLET  codebase="classes" code="fokat1.class" width=850 height=500></APPLET>
+</P>     
+        </div>
+
+      </section>
+
+      <section id="experiment-article-section-5">
+   
+        <div id="experiment-article-section-5-icon" 
+        class="icon">
+	  <!-- Enclose the icon image of your lab.-->
+	  <img src="../images/manual.jpg" />
+	</div>
+
+        <div id="experiment-article-section-5-heading" 
+        class="heading">
+          Manual
+        </div>
+
+        <div id="experiment-article-section-5-content" 
+        class="content">
+<p>
+<ol>
+<li>Change and visualize different vegetation indices available.
+</li>
+</ol>
+</p>     
+
+          </div>
+
+        </section>
+
+        <section id="experiment-article-section-6">
+      
+          <div id="experiment-article-section-6-icon" 
+          class="icon">
+	    <!-- Enclose the icon image of your lab.-->
+	    <img src="../images/quizzes.jpg" />
+	  </div>
+
+          <div id="experiment-article-section-6-heading" 
+          class="heading">
+            Quizzes
+          </div>
+
+          <div id="experiment-article-section-6-content" 
+          class="content">
+            
+            <p>
+              
+_______________________________________________________________________________________________________________
+              <input type="submit" value="Submit Answers" 
+                class="button" />
+            </p>
+
+          </div>
+
+        </section>
+
+        <section id="experiment-article-section-7">
+	  
+          <div id="experiment-article-section-7-icon" 
+          class="icon">
+	    <!-- Enclose the icon image of your lab. -->
+	    <img src="../images/procedure.jpg" />
+	  </div>
+	
+          <div id="experiment-article-section-7-heading" 
+          class="heading">
+	    Procedure
+	  </div>
+	
+          <div id="experiment-article-section-7-content" 
+          class="content">
+	    <p>
+	      Procedure for the experiment is as follows.
+___________________________________________________________________________________________________________________________________________
+	    </p>
+	  </div>
+	
+        </section>
+			
+		
+        <section id="experiment-article-section-8">
+   
+          <div id="experiment-article-section-8-icon" 
+          class="icon">
+	    <!-- Enclose the icon image of your lab.-->
+	    <img src="../images/readings.jpg" />
+	  </div>
+
+          <div id="experiment-article-section-8-heading" 
+          class="heading">
+            Further Readings
+          </div>
+
+          <div id="experiment-article-section-8-content" 
+          class="content">
+            
+          </div>
+
+        </section>
+
+      </div>
+
+
+    <!-- An article can have a sidebar that contain related 
+    links and additional material (however it is kept optional 
+    at this moment) -->
+    <aside id="lab-article-sidebar" class="default">
+      <!-- put the content that you want to appear in the 
+      sidebar -->	
+    </aside>
+
+
+    <!-- Article footer can display related content and 
+    additional links -->						
+    <footer id="lab-article-footer" class="default">
+      <!-- Put the content that you want to appear here -->
+    </footer>
+
+  </article>
+
+
+  <!-- Links to other labs, about us page can be kept the lab 
+  footer-->
+  <footer id="lab-footer" class="default">
+    <!-- Put the content here-->
+	<p>
+		<a  href="../index.html">Home page</a> |
+		<a  href="">Contact Us</a>|
+	</p>
+	<p><a class="static">&copy; 2010, Lab for Spatial Informatics, IIIT Hyderabad</a></p>
+  </footer>
+
+</div>		
+
+</body>
+</html>

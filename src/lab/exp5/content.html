@@ -1,0 +1,350 @@
+<!-- This file needs to be edited by the lab developer to suit
+the requirements of their lab in particular.-->
+
+<!-- Add class="default" to include any element as it is
+specified in default.html. 
+Do not include class="default" to the elements that you want to
+edit -->
+
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+
+<div id="experiment"> <!-- The Experiment Document Container-->
+
+  <!-- The lab Header contains the logo and the name of the lab,
+  usually displayed on the top of the page-->
+
+  <header id="experiment-header" class="default">
+  
+    <div id="experiment-header-logo" class="logo">
+      <!-- Enclose the logo image of your lab or write it in 
+      text-->
+      <img src="../images/logo.png" />
+    </div>
+
+    <div id="experiment-header-heading" class="heading">
+      <!-- Write the name of your lab and link it to the home 
+      page of your lab (h1 tag is preferred while writing your 
+      lab name)-->
+      <a href="../index.html">Optical Remote Sensing Lab</a>	
+    </div>
+
+    <!-- Add any additional element you want to add to the lab 
+    header, For example : Help (Enclosing them with suitable 
+    div is recommended)-->
+
+  </header>
+
+
+  <!-- The lab article is the main content area where all the 
+  experiment content sits-->
+  <article id="experiment-article">
+  
+    <!-- The lab article has an header, optional navigational 
+    menu, number of sections, an optional sidebar and a closing 
+    footer-->
+    
+      <header id="experiment-article-heading" class="heading">
+        <!-- You can add a welcome message or title of the 
+        experiment here -->
+      Data quantization levels and object extraction effects of Radiometric characteristics of the sensor
+        <!-- Add any additional element if required with proper 
+        enclosing-->
+      </header>
+
+      <!-- Navigation menu is useful to organize the view of 
+      multiple sections inside the article-->
+      <nav id="experiment-article-navigation" class="default">
+        <ul id="experiment-article-navigation-menu">
+          <!-- The menu can be dynamically generated to contain 
+          the headings of your sections or instead write the 
+          menu items of your choice individually enclosedu in 
+          <li> tag as shown below-->
+        </ul>
+      </nav>
+
+      <!-- All the sections of your lab or experiment can be 
+      enclosed together with a div element as shown below-->
+      <div id="experiment-article-sections">
+
+        <!-- First section of the article-->
+        <section id="experiment-article-section-1">
+          
+          <div id="experiment-article-section-1-icon" 
+          class="icon">
+	    <!-- Enclose the icon image of your lab -->
+	    <img src="../images/introduction.jpg" />
+	  </div>	
+          
+          <!-- The heading for the section can be enclosed in a 
+          div tag. -->
+          <div id="experiment-article-section-1-heading" 
+          class="heading">
+            Introduction
+          </div>
+
+          <!-- Write the section content inside a paragraph 
+          element, You can also include images with <img> tag -->
+          <div id="experiment-article-section-1-content" 
+          class="content">	
+	<p><b><u>Resolution</u></b><br>
+
+<p> Resolution is defined as the ability of an entire remote-sensing system, including lens antennae, display, exposure, processing, and other factors, to render a sharply defined image. Resolution of a remote-sensing is of different types like Spatial, Spectral, Radiometric and Temporal Resolutions.
+	</p>
+
+	<p><b><u>Radiometric Resolution</u></b><br>
+<p> While the arrangement of pixels describes the spatial structure of an image, the radiometric characteristics describe the actual information content in an image. Every time an image is acquired on film or by a sensor, its sensitivity to the magnitude of the electromagnetic energy determines the <b>radiometric resolution.</b> The radiometric resolution of an imaging system describes its ability to discriminate very slight differences in energy.  The finer the radiometric resolution of a sensor, the more sensitive it is to detecting small differences in reflected or emitted energy.</p>
+        </div>
+
+
+      </section>
+
+      <!-- Second section of the article-->
+      <section id="experiment-article-section-2">
+        
+        <div id="experiment-article-section-2-icon" 
+        class="icon">
+	  <!-- Enclose the icon image of your lab. -->
+	  <img src="../images/theory.jpg" />
+	</div>
+				
+        <!-- The heading for the section can be enclosed in a 
+        div tag. -->
+        <div id="experiment-article-section-2-heading" 
+        class="heading">
+          Theory
+        </div>
+
+
+        <!-- Write the section content inside a paragraph 
+        element, we can also include images with <img> tag -->
+        <div id="experiment-article-section-2-content" 
+        class="content">
+<p> Radiometric resolution is defined as sensors ability to detect and record slight variations   in the amount of EMR reaching the sensor. It is normally indicated by the number of quantization levels used to measure reflectance. This determines the distinguish ability of ground features differing only slightly in their reflectance or radiance. It is obtained by dividing the total range of the signal into a large number of just discriminate levels. For example, output of Landsat MSS bands 4, 5, 6 is divided into 128 levels whereas Landsat Thematic Mapper output is divided into 256 levels. </p> <br>
+<p> The radiometric resolution is a measure of how many grey levels are measured between pure black and pure white spectral band.  It characterizes the ability to distinguish the finer variations of the reflected or emitted radiation from the different objects in a given spectral band.  The radiometric resolution is measured in 'bits'.</p>
+<br>
+<p>Imagery data are represented by positive digital numbers which vary from 0 to (one less than) a selected power of 2. This range corresponds to the number of bits used for coding numbers in binary format. Each bit records an exponent of power 2 (e.g. 1 bit=2 1=2). The maximum number of brightness levels available depends on the number of bits used in representing the energy recorded. Thus, if a sensor used 8 bits to record the data, there would be 28=256 digital values available, ranging from 0 to 255. However, if only 4 bits were used, then only 24=16 values ranging from 0 to 15 would be available. Thus, the radiometric resolution would be much less. Image data are generally displayed in a range of grey tones, with black representing a digital number of 0 and white representing the maximum value (for example, 255 in 8-bit data). By <b>comparing a 2-bit image with an 8-bit image,</b> we can see that there is a large difference in the level of detail discernible depending on their radiometric resolutions.(source: <a href="www.ccrs.nrcan.gc.ca">www.ccrs.nrcan.gc.ca</a>)</p>
+
+ <p> <img src="../images/rad_1.jpg"/> </p>
+<p> Consider, for example, a range of radiation intensities (brightness levels). This continuous range can be subdivided into a set of values of steadily increasing intensity. Each subdivision is a "level" that in a black and white rendition of a scene is represented by some degree of grayness. A two level rendition would consist of just black and white (all intermediate levels have been assigned to one or the other). A four level scene would include two intermediate gray levels). A 64 level image would have a range of distinguishable increasing (from black) gray tones up to the highest (white). Most sensors convert intercepted radiation into a digital form, which consists of a number that falls within some range of values. Radiometric resolution defines this range of values. A sensor with 8-bit resolution (e.g. Landsat TM) has a range of 256 levels, or 28, values (since 0 is one level, the range is 0-255). A 6-bit sensor (e.g. Landsat Multispectral Scanner (MSS) 1) has a range of 64, or 26, level values. To illustrate how this affects a scene representation, consider these panels (produced by Dr. S. Liew) that depict a scene at 21, 22, 23, and 24, that is, 2(upper left), 4, 8, and 16 (lower right) gray levels, or quantized radiometric values: (Source<a href="rst.gsfc.nasa.gov">rst.gsfc.nasa.gov</a>)
+ </p>
+
+
+<p> <img src="../images/rad_2.jpg"/> 
+ <img src="../images/rad_3.jpg"/> </p>
+
+<p> <img src="../images/rad_4.jpg"/> 
+ <img src="../images/rad_5.jpg"/> </p>
+        </div>
+      </section>
+
+
+      <section id="experiment-article-section-3">
+        
+        <div id="experiment-article-section-3-icon" 
+        class="icon">
+	  <!-- Enclose the icon image of your lab. -->
+	  <img src="../images/objective.jpg" />
+	</div>
+     
+        <div id="experiment-article-section-3-heading" 
+        class="heading">
+          Objective
+        </div>
+
+        <div id="experiment-article-section-3-content" 
+        class="content">
+          _________________________________________________________________________________________________________________________________________
+        </div>
+
+      </section>
+
+
+      <section id="experiment-article-section-4">
+
+        <div id="experiment-article-section-4-icon" 
+        class="icon">
+	  <!-- Enclose the icon image of your lab.-->
+	  <img src="../images/simulation.jpg" />
+	</div>
+
+        <div id="experiment-article-section-4-heading" 
+        class="heading">
+          Experiment
+        </div>
+
+        <div id="experiment-article-section-4-content" 
+        class="content">
+<P>
+<APPLET  codebase="classes" code="fokat1.class" width=850 height=500></APPLET>
+</P>   
+        </div>
+
+      </section>
+
+      <section id="experiment-article-section-5">
+   
+        <div id="experiment-article-section-5-icon" 
+        class="icon">
+	  <!-- Enclose the icon image of your lab.-->
+	  <img src="../images/manual.jpg" />
+	</div>
+
+        <div id="experiment-article-section-5-heading" 
+        class="heading">
+          Manual
+        </div>
+
+        <div id="experiment-article-section-5-content" 
+        class="content">
+    <p>
+<ol>
+ 	<li>In this experiment you are provided with a wavelength slider according to which you can adjust the wavelength emmited by the spectrometer to the object placed on the table. You are provoded with four such objects.  </li>
+<li>Start the experiment by selecting wavelength from slider.Reflected ray will be captured by the lens of the spectrometer and reflectance is calulated. </li>
+<li>Take observations and fill them in the boxes against wavelength and reflectance, provided in the parallel pane, and mark the points.</li>
+<li> Likewise mark atleast 5-6 points and generate graph.
+</li>
+<li>
+ Now, press Compare button to compare your observed graph with the original graph.
+</li>
+</ol>
+</p>     
+
+          </div>
+
+        </section>
+
+        <section id="experiment-article-section-6">
+      
+          <div id="experiment-article-section-6-icon" 
+          class="icon">
+	    <!-- Enclose the icon image of your lab.-->
+	    <img src="../images/quizzes.jpg" />
+	  </div>
+
+          <div id="experiment-article-section-6-heading" 
+          class="heading">
+            Quizzes
+          </div>
+
+          <div id="experiment-article-section-6-content" 
+          class="content">
+            
+            <p>
+              
+        <b>Q1.</b> In order to separate snow from clouds in remotely sensed data, you would use a band in <br>
+        <input type="radio" name="q1" id="q1" value="4">Visible region (400 to 700nm)</font> <br>
+        <input type="radio" name="q1" id="q1" value="3">Near Infrared region (700 to 1300 nm) </font> <br/>
+        <input type="radio" name="q1" id="q1" value="2">Middle Infrared region (1500 to 2400 nm) </font> <br/>
+        <input type="radio" name="q1" id="q1" value="1">Thermal region (8000 to 14000 nm) </font> <br/>
+        <input type="radio" name="q1" id="q1" value="0">Microwave region (1 mm and greater) </font> <br/><br/>
+
+        <b>Q2.</b> What determines the colour of an object.<br>
+
+        <input type="radio" name="q1" id="q1" value="4">Wavelength </font> <br>
+        <input type="radio" name="q1" id="q1" value="3">Average reflectance </font> <br/>
+        <input type="radio" name="q1" id="q1" value="2">Highest reflectance value </font> <br/>
+        <input type="radio" name="q1" id="q1" value="1">None of the above </font> <br/><br />
+<!--        <input type="radio" name="q1" id="q1" value="0">Microwave region (1 mm and greater) </font> <br/><br/> -->
+        <b>Q3.</b> Forests look green. Can one distinguish between Tree species using EMR reflectance spectrum<br>
+
+        <input type="radio" name="q1" id="q1" value="4">Yes </font> <br>
+        <input type="radio" name="q1" id="q1" value="3">No </font> <br/>
+        <input type="radio" name="q1" id="q1" value="2">May be </font> <br/>
+        <input type="radio" name="q1" id="q1" value="1">None of the above </font> <br/><br />
+              <input type="submit" value="Submit Answers" 
+                class="button" />
+            </p>
+
+          </div>
+
+        </section>
+
+        <section id="experiment-article-section-7">
+	  
+          <div id="experiment-article-section-7-icon" 
+          class="icon">
+	    <!-- Enclose the icon image of your lab. -->
+	    <img src="../images/procedure.jpg" />
+	  </div>
+	
+          <div id="experiment-article-section-7-heading" 
+          class="heading">
+	    Procedure
+	  </div>
+	
+          <div id="experiment-article-section-7-content" 
+          class="content">
+	    <p>
+	      Procedure for the experiment is as follows.
+___________________________________________________________________________________________________________________________________________
+	    </p>
+	  </div>
+	
+        </section>
+			
+		
+        <section id="experiment-article-section-8">
+   
+          <div id="experiment-article-section-8-icon" 
+          class="icon">
+	    <!-- Enclose the icon image of your lab.-->
+	    <img src="../images/readings.jpg" />
+	  </div>
+
+          <div id="experiment-article-section-8-heading" 
+          class="heading">
+            Further Readings
+          </div>
+
+          <div id="experiment-article-section-8-content" 
+          class="content">
+<ol>
+	<li>Introduction to Remote Sensing by James B. Campbell </li>
+<li>Remote Sensing and Image Interpretation by Thomas.M.Lillesand</li>
+<li>Remote sensing Digital Image Analysis by J.A Richards and Xiuping Tia</li>
+<li>Principles of Remote Sensing. An Introductory Textbook. ITC Educational Textbook Series.</li>
+	</ol>
+            
+          </div>
+
+        </section>
+
+      </div>
+
+
+    <!-- An article can have a sidebar that contain related 
+    links and additional material (however it is kept optional 
+    at this moment) -->
+    <aside id="lab-article-sidebar" class="default">
+      <!-- put the content that you want to appear in the 
+      sidebar -->	
+    </aside>
+
+
+    <!-- Article footer can display related content and 
+    additional links -->						
+    <footer id="lab-article-footer" class="default">
+      <!-- Put the content that you want to appear here -->
+    </footer>
+
+  </article>
+
+
+  <!-- Links to other labs, about us page can be kept the lab 
+  footer-->
+  <footer id="lab-footer" class="default">
+    <!-- Put the content here-->
+	<p>
+		<a  href="../index.html">Home page</a> |
+		<a  href="">Contact Us</a>|
+	</p>
+	<p><a class="static">&copy; 2010, Lab for Spatial Informatics, IIIT Hyderabad</a></p>
+  </footer>
+
+</div>		
+
+</body>
+</html>
