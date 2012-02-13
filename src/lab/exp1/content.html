@@ -8,7 +8,7 @@ edit -->
 
 <!DOCTYPE html>
 <html>
-<head><title>Optical Remote Sensing Lab</title></head>
+<head></head>
 <body>
 
 <div id="experiment"> <!-- The Experiment Document Container-->
@@ -21,7 +21,7 @@ edit -->
     <div id="experiment-header-logo" class="logo">
       <!-- Enclose the logo image of your lab or write it in 
       text-->
-      <img src="../images/logo.png" />
+      <img src="../images/tophead_5.png" />
     </div>
 
     <div id="experiment-header-heading" class="heading">
@@ -45,11 +45,13 @@ edit -->
     <!-- The lab article has an header, optional navigational 
     menu, number of sections, an optional sidebar and a closing 
     footer-->
+     <div id="experiment-article-breadcrumb" class="breadcrumb">
+     </div>
     
       <header id="experiment-article-heading" class="heading">
         <!-- You can add a welcome message or title of the 
         experiment here -->
-        Electromagnetic Radiation
+        Electromagnetic Spectrum
         <!-- Add any additional element if required with proper 
         enclosing-->
       </header>
@@ -75,26 +77,23 @@ edit -->
           <div id="experiment-article-section-1-icon" 
           class="icon">
 	    <!-- Enclose the icon image of your lab -->
-	    <img src="../images/introduction.jpg" />
+	    <img src="../images/objective.jpg" />
 	  </div>	
           
           <!-- The heading for the section can be enclosed in a 
           div tag. -->
           <div id="experiment-article-section-1-heading" 
           class="heading">
-            Introduction
+            Objective
           </div>
 
           <!-- Write the section content inside a paragraph 
           element, You can also include images with <img> tag -->
           <div id="experiment-article-section-1-content" 
           class="content">	
-<p>The first requirement for remote sensing is to have an <b>energy source to illuminate the target</b>. This energy is in the form of electromagnetic radiation. Understanding the characteristics of electromagnetic radiation in terms of their wavelength and frequency is crucial to understanding the information to be extracted from remote sensing data. Electromagnetic radiation (EMR) extends over a wide range of energies and wavelengths (frequencies) from the shorter wavelengths (including gamma and x-rays) to the longer wavelengths (including microwaves and broadcast radio waves). There are several regions of the electromagnetic spectrum which are useful for remote sensing.
-<p>The distribution of the continuum of all radiant energies can be plotted either as a function of wavelength or of frequency in a chart known as the <u>Electromagnetic (EM) Spectrum</u>
-<a><img src="../images/EM_1.jpg"></a><br>
-</p>
-<a><img src="../images/em_2.jpg"></a>
-
+            <p>
+Electromagnetic Radiation (EMR) is the fundamental component of remote sensing. It provides simple basics on how the reflectance pattern of objects varies and how such information is utilized in the information extraction through remote sensing process. In this lab, one can understand how use of different parts (or bands) of the spectrum will lead to different imaging outcomes of the objects that exist in the area being imaged.
+            </p>
 
         </div>
 
@@ -122,16 +121,27 @@ edit -->
         element, we can also include images with <img> tag -->
         <div id="experiment-article-section-2-content" 
         class="content">
-          <p>The light which our eyes - our "remote sensors" - can detect is part of the <b>visible spectrum</b>. The visible wavelengths cover a range from approximately 0.4 to 0.7 μm. The longest visible wavelength is red and the shortest is violet (Violet: 0.4 - 0.446 μm; Blue: 0.446 - 0.500 μm; Green: 0.500 - 0.578 μm Yellow: 0.578 - 0.592 μm; Orange: 0.592 - 0.620 μm; Red: 0.620 - 0.7 μm)<br>
-The next portion of the spectrum of interest is the infrared (IR) region which covers the wavelength range from approximately 0.7 μm to 100 μm - more than 100 times as wide as the visible portion! The infrared region can be divided into two categories based on their radiation properties - the reflected IR, and the emitted or thermal IR. The reflected IR covers wavelengths from approximately 0.7 μm to 3.0 μm. The thermal IR region is quite different than the visible and reflected IR portions, as this energy is essentially the radiation that is emitted from the Earth's surface in the form of heat. The thermal IR covers wavelengths from approximately 3.0 μm to 100 μm.<br>
-<b>The microwave region is from</b> about 1 mm to 1 m. This covers the longest wavelengths used for remote sensing.
-</p>
-<a><img src="../images/em_3.jpg"></a>
-<p>Most remote sensing is conducted above the Earth either within or above the atmosphere. The gases in the atmosphere interact with solar irradiation and with radiation from the Earth's surface. The atmosphere itself is excited by EMR so as to become another source of released photons. Here is a generalized diagram showing relative atmospheric radiation transmission of different wavelengths. Blue zones (absorption bands) mark minimal passage of incoming and/or outgoing radiation, whereas, white areas (transmission peaks) denote atmospheric windows, in which the radiation doesn't interact much with air molecules and hence, isn't absorbed.
+          <p>
+EMS represents the continuum of electromagnetic energy from extremely short wavelengths (cosmic and gamma rays) to extremely long wavelengths (microwaves).  Spectrum is arbitrarily segmented into major divisions. There are no natural breaks in the EMS
+          </p>
+<table border='0'>
+<tr>
+<td>
+<img src="../images/1_theory.png"/>
 
-    </p> 
-<a><img src="../images/em_4.jpg"></a>
-<a><img src="../images/EM_table.jpg"></a>
+Ref:<a href="http://www.udel.edu/Geography/DeLiberty/Geog474/geog474_energy_prin.html" target="_blank">http://www.udel.edu/Geography/DeLiberty/Geog474/geog474_energy_prin.html</a><br>
+</td> </tr>
+<tr> <td>
+
+<img src="../images/1_theory2.png" height = '550'>
+</td> </tr>
+</table>
+<p>
+When radiation reaches an object, the object may absorb one part and reflect another part of the radiation. In all cases, the electromagnetic radiation’s characteristics will be modified. Plants use mainly the red part of the solar spectrum to carry out photosynthesis. The reflected light spectrum is thus devoid of this red band and the light reflected by the leaves appears green.<br>
+Different objects do not absorb the same parts of solar radiation. Consequently, their reflected ray spectra are different. The pattern of the electromagnetic spectrum reflected by an object is called its ‘spectral signature’. Remote sensing makes use of this property, for analyzing the characteristics of the electromagnetic spectra reflected by objects (their spectral signatures).<br>
+Ref: <a href="http://eoedu.belspo.be/en/guide/speele.asp?section=2" target="_blank">http://eoedu.belspo.be/en/guide/speele.asp?section=2</a>
+</p>
+
         </div>
       </section>
 
@@ -141,18 +151,21 @@ The next portion of the spectrum of interest is the infrared (IR) region which c
         <div id="experiment-article-section-3-icon" 
         class="icon">
 	  <!-- Enclose the icon image of your lab. -->
-	  <img src="../images/objective.jpg" />
+	  <img src="../images/procedure.jpg" />
 	</div>
      
         <div id="experiment-article-section-3-heading" 
         class="heading">
-          Objective
+          Manual
         </div>
 
         <div id="experiment-article-section-3-content" 
         class="content">
-          _________________________________________________________________________________________________________________________________________
-        </div>
+        
+
+
+
+	</div>
 
       </section>
 
@@ -172,69 +185,120 @@ The next portion of the spectrum of interest is the infrared (IR) region which c
 
         <div id="experiment-article-section-4-content" 
         class="content">
-<P>
-<APPLET  codebase="classes" code="NewJApplet.class" width=700 height=400></APPLET>
-</P>   
+          <P>
+<APPLET  code="NewJApplet.class" width=700 height=400></APPLET>
+
+</P>
         </div>
 
       </section>
 
-      <section id="experiment-article-section-5">
-   
-        <div id="experiment-article-section-5-icon" 
-        class="icon">
-	  <!-- Enclose the icon image of your lab.-->
-	  <img src="../images/manual.jpg" />
-	</div>
-
-        <div id="experiment-article-section-5-heading" 
-        class="heading">
-          Manual
-        </div>
-
-        <div id="experiment-article-section-5-content" 
-        class="content">
-          ______________________________________________________________________________________________________
-          </div>
-
-        </section>
-
-        <section id="experiment-article-section-6">
+        <section id="experiment-article-section-5">
       
-          <div id="experiment-article-section-6-icon" 
+          <div id="experiment-article-section-5-icon" 
           class="icon">
 	    <!-- Enclose the icon image of your lab.-->
 	    <img src="../images/quizzes.jpg" />
 	  </div>
 
-          <div id="experiment-article-section-6-heading" 
+          <div id="experiment-article-section-5-heading" 
           class="heading">
             Quizzes
           </div>
 
-          <div id="experiment-article-section-6-content" 
+          <div id="experiment-article-section-5-content" 
           class="content">
             
             <p>
               
-                      <b>Q1.</b>Which wave below has the longest wavelength? <br>
-        <input type="radio" name="q1" id="q1" value="3"> Ultra violet waves</font> <br>
-        <input type="radio" name="q1" id="q1" value="2"> Radio waves </font> <br/>
-        <input type="radio" name="q1" id="q1" value="1"> X-rays </font> <br/>
-        <input type="radio" name="q1" id="q1" value="0"> Infrared waves </font> <br/><br/>
-        <b>Q2.</b> Of the waves of the Visible spectrum which color has the longest wavelength? </br>
-        <input type="radio" name="q2" id="q2" value="3"> Green </font> <br>
-        <input type="radio" name="q2" id="q2" value="2"> Orange </font> <br>
-        <input type="radio" name="q2" id="q2" value="1"> Voilet </font> <br>
-        <input type="radio" name="q2" id="q2"value="0">Red </font> <br/><br/>
-        <b>Q3.</b> Which wave below has the shortest wavelength? <br>
-        <input type="radio" name="q3" id="q3" value="4">Visible Light</font> <br>
-        <input type="radio" name="q3" id="q3" value="3">Gamma Waves</font> <br>
-        <input type="radio" name="q3" id="q3" value="2">Microwaves</font> <br>
-        <input type="radio" name="q3" id="q3"value="0">Ultravoilet Waves </font> <br/><br/>
-        <b>Q4.</b>The higher the frequency the higher the energy of the wave <br>
-        <input type="radio" name="q4" id="q4" value="1"> True </font> <br>
-        <input type="radio" name="q4" id="q4" value="1"> False </font> <br><br/>
+              <b>Q1.</b>
+	How are the wave energy and the wavelength in the electromagnetic spectrum related? <br>
+              <input type="radio" name="q1" id="q1" value="1"> 
+                <font > a. Inversely related. </font> <br> 
+              <input type="radio" name="q1" id="q1" value="2"> 
+                <font > b. Directly proportional </font> <br> 
+              <input type="radio" name="q1" id="q1" value="3"> 
+                <font > c. No relation. </font> <br> 
+              <input type="radio" name="q1" id="q1" value="4">
+                <font > d. Related only for a few specified wavelengths. </font> <br/><br/> 
+              
+              <b>Q2.</b> 
+		Which wave of the electromagnetic spectrum carries the most energy?<br>
+              <input type="radio" name="q2" id="q2" value="1"> 
+                <font > a. Ultraviolet </font> <br> 
+              <input type="radio" name="q2" id="q2" value="2"> 
+                <font > b. X-ray </font> <br> 
+              <input type="radio" name="q2" id="q2" value="3"> 
+                <font > c. Gamma </font> <br> 
+              <input type="radio" name="q2" id="q2"value="4">
+                <font > d. Radio </font> <br/><br/> 
+              
+              <b>Q3.</b> 
+		Which wave below has the shortest wavelength?<br>
+              <input type="radio" name="q3" id="q3" value="1"> 
+                <font > a. Ultra violet waves </font> <br> 
+              <input type="radio" name="q3" id="q3" value="2"> 
+                <font > b. Visible Light </font> <br> 
+              <input type="radio" name="q3" id="q3" value="3"> 
+                <font > c. Microwaves </font> <br> 
+              <input type="radio" name="q3" id="q3"value="4">
+                <font > d. Gamma waves </font> <br/><br/> 
+              
+              <b>Q4.</b> 
+              Which wave below has the longest wavelength? <br> 
+              <input type="radio" name="q4" id="q4" value="1"> 
+                <font > a. Ultra violet waves </font> <br> 
+              <input type="radio" name="q4" id="q4" value="2"> 
+                <font > b. Thermal Infrared waves </font> <br> 
+              <input type="radio" name="q4" id="q4" value="3"> 
+                <font > c. Green light </font> <br> 
+              <input type="radio" name="q4" id="q4" value="4">
+                <font > d. Infrared waves </font> <br/><br/> 
+              
+              <b>Q5.</b> 
+              The higher the frequency the higher the energy of the wave.<br> 
+              <input type="radio" name="q5" id="q5" value="1"> 
+                <font > a. True </font> <br> 
+              <input type="radio" name="q5" id="q5"value="0">
+                <font > b. False </font> <br/><br/> 
+              
+              <b>Q6.</b> 
+              The units of measurement for EM spectrum, including the colors of visible light, can be <br> 
+              <input type="radio" name="q6" id="q6" value="1"> 
+                <font > a. Wavelength </font> <br> 
+              <input type="radio" name="q6" id="q6" value="2"> 
+                <font > b. Frequency. </font> <br> 
+              <input type="radio" name="q6" id="q6" value="3"> 
+                <font > c. Energy. </font> <br> 
+              <input type="radio" name="q6" id="q6" value="4">
+                <font > d. Any of the above. </font> <br/><br/> 
+
+
+              
+              <b>Q7.</b> 
+              The energy of a photon of light is __________ proportional to its frequency and __________ proportional to its wavelength.  <br> 
+              <input type="radio" name="q7" id="q7" value="1"> 
+                <font > a. directly, directly </font> <br> 
+              <input type="radio" name="q7" id="q7" value="2"> 
+                <font > b. inversely, inversely </font> <br> 
+              <input type="radio" name="q7" id="q7" value="3"> 
+                <font > c. inversely, directly </font> <br> 
+              <input type="radio" name="q7" id="q7" value="4">
+                <font > d. directly, inversely </font> <br/><br/> 
+
+              
+              <b>Q8.</b> 
+              Among, Gamma, Ultraviolet and Visible parts of EM, __________ radiation has the longest wavelength and __________ radiation has the greatest energy. <br> 
+              <input type="radio" name="q8" id="q8" value="1"> 
+                <font > a. ultraviolet, gamma  </font> <br> 
+              <input type="radio" name="q8" id="q8" value="2"> 
+                <font > b. visible, ultraviolet  </font> <br> 
+              <input type="radio" name="q8" id="q8" value="3"> 
+                <font > c. visible, gamma </font> <br> 
+              <input type="radio" name="q8" id="q8" value="4">
+                <font > d. gamma, visible </font> <br/><br/> 
+
+
               <input type="submit" value="Submit Answers" 
                 class="button" />
             </p>
@@ -243,50 +307,28 @@ The next portion of the spectrum of interest is the infrared (IR) region which c
 
         </section>
 
-        <section id="experiment-article-section-7">
+        <section id="experiment-article-section-6">
 	  
-          <div id="experiment-article-section-7-icon" 
+          <div id="experiment-article-section-6-icon" 
           class="icon">
 	    <!-- Enclose the icon image of your lab. -->
-	    <img src="../images/procedure.jpg" />
+	    <img src="../images/readings.jpg" />
 	  </div>
 	
-          <div id="experiment-article-section-7-heading" 
+          <div id="experiment-article-section-6-heading" 
           class="heading">
-	    Procedure
+	    Feedback
 	  </div>
 	
-          <div id="experiment-article-section-7-content" 
+          <div id="experiment-article-section-6-content" 
           class="content">
 	    <p>
-	      Procedure for the experiment is as follows.
-___________________________________________________________________________________________________________________________________________
+	      Please provide feedback for the experiment.
 	    </p>
 	  </div>
 	
         </section>
 			
-		
-        <section id="experiment-article-section-8">
-   
-          <div id="experiment-article-section-8-icon" 
-          class="icon">
-	    <!-- Enclose the icon image of your lab.-->
-	    <img src="../images/readings.jpg" />
-	  </div>
-
-          <div id="experiment-article-section-8-heading" 
-          class="heading">
-            Further Readings
-          </div>
-
-          <div id="experiment-article-section-8-content" 
-          class="content">
-            
-          </div>
-
-        </section>
-
       </div>
 
 
@@ -310,13 +352,11 @@ ________________________________________________________________________________
 
   <!-- Links to other labs, about us page can be kept the lab 
   footer-->
-  <footer id="lab-footer" class="default">
+  <footer id="lab-footer" >
     <!-- Put the content here-->
-	<p>
-		<a  href="../index.html">Home page</a> |
-		<a  href="">Contact Us</a>|
-	</p>
-	<p><a class="static">&copy; 2010, Lab for Spatial Informatics, IIIT Hyderabad</a></p>
+<a href="http://virtual-labs.ac.in/nmeict"target="_blank" >Sponsered by MHRD (NME-ICT) </a> | <a href="http://virtual-labs.ac.in/licensing" target="_blank"> Licensing Terms </a><br>
+		<a  href=""target="_blank">Contact Us</a>|
+<a href="http://lsi.iiit.ac.in" target="_blank">&copy; 2010, Lab for Spatial Informatics, IIIT Hyderabad</a></p>
   </footer>
 
 </div>		

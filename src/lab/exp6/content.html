@@ -21,7 +21,7 @@ edit -->
     <div id="experiment-header-logo" class="logo">
       <!-- Enclose the logo image of your lab or write it in 
       text-->
-      <img src="../images/logo.png" />
+      <img src="../images/tophead_5.png" />
     </div>
 
     <div id="experiment-header-heading" class="heading">
@@ -45,6 +45,8 @@ edit -->
     <!-- The lab article has an header, optional navigational 
     menu, number of sections, an optional sidebar and a closing 
     footer-->
+     <div id="experiment-article-breadcrumb" class="breadcrumb">
+     </div>
     
       <header id="experiment-article-heading" class="heading">
         <!-- You can add a welcome message or title of the 
@@ -75,23 +77,24 @@ edit -->
           <div id="experiment-article-section-1-icon" 
           class="icon">
 	    <!-- Enclose the icon image of your lab -->
-	    <img src="../images/introduction.jpg" />
+	    <img src="../images/objective.jpg" />
 	  </div>	
           
           <!-- The heading for the section can be enclosed in a 
           div tag. -->
           <div id="experiment-article-section-1-heading" 
           class="heading">
-            Introduction
+            Objective
           </div>
 
           <!-- Write the section content inside a paragraph 
           element, You can also include images with <img> tag -->
           <div id="experiment-article-section-1-content" 
           class="content">	
-<h3><u>Colour Composite Images</u></h3>
-<p>
-From one single band of satellite data, the difference in energy levels between various land cover classifications may not be distinct. Since comparing the spectral characteristics of land features in multiple bands provides a better separation, or contrast, between different land surfaces, multiple bands of satellite data can be combined to create a data product known as a composite image. The composite images are often called three-band composite images since they are created using the measured energy level in each of three spectral bands to control the amount of red, blue, and green in a color output image.</p>
+            <p>
+		This lab focuses on the creation of various color composite images for better visual interpretation and information extraction from the satellite image. Depending on the type, sensor stores reflectance data from the object on earth surface in a number of bands (2, 4, 7 etc.,) corresponding to the data collected in that EMS. This variation in number of bands for each sensor is referred as spectral resolution. Following this lab, user will be introduced to concept of creation of false colour composite, using 3 bands (any combination) and their use for particular utility. 
+            </p>
+
         </div>
 
 
@@ -118,38 +121,74 @@ From one single band of satellite data, the difference in energy levels between 
         element, we can also include images with <img> tag -->
         <div id="experiment-article-section-2-content" 
         class="content">
-<h3>True-Color Composite (321)</h3>
-
-<p>A true-color composite uses following channels to create an image<br>
-Band 3 (Visible red) = red <br>
-Band 2 (Visible green) = green <br>
-Band 1 (Visible blue-green) = blue<br>
-
-True-color images are often low in contrast and hazy in appearance since blue light is more easily scattered by the atmosphere. </p><br>
-
-<h3>Near Infrared Composite (432)</h3>
+          <p>
+For visual analysis, color composites make fullest use of the capabilities of the human eye. Depending upon the graphics system in use, composite generation ranges from simply selecting the bands to use, to more involved procedures of band combination. Following figure shows several composites made with different band combinations from the same set of TM images.<br>
+(Source: http://www.mtholyoke.edu/courses/tmillett/course/geog205/files/remote_sensing.pdf)
+          </p>
+<img src="../images/6_theory1.png"/>
 <p>
-Band 4 (NIR) = red <br>
-Band 3 (Visible red) = green <br>
-Band 2 (Visible green) = blue <br>
+Satellites acquire images in black and white, so how is it possible to create the beautiful color images that we see. The images created using different bands (or wavelengths) have different contrast (light and dark areas). Computers make it possible to assign "false color" to these black and white images. The three primary colors of light are red, green, and blue. Computer screens can display an image in three different bands at a time, by using a different primary color for each band. When we combine these three images we get a "false color image".<br>
+(Source: http://landsat.gsfc.nasa.gov/education/compositor/color_comp.html )
+<img src="../images/6_theory2.png"></p>
 
-A 432 composite very useful in determining the extent of vegetation and in classifying different vegetation types
-</p>
-
-<h3>Short-wave Infrared Composite (743 or 742)</h3>
 <p>
-A Short-wave Infrared composite contains at least one band in the short-wave infrared (SWIR) portion of the electromagnetic spectrum <br>
-
-Band 7 (SWIR) = red<br> 			
-Band 4 (NIR) = green<br> 		        
-Band 3 (Visible red) = blue<br><br> 		
-Band 7 (SWIR) = red<br> 
-Band 4 (NIR) = green <br>
-Band 2 (Visible green) = blue<br>
-
-SWIR composite image is used for detecting vegetation stress.<br>
-Very useful in detecting soil types and soil disturbance since moisture is an important characteristic of soil structure<br> 
+Different Band combination of Modis image can also be seen at  <a href="http://biodiversityinformatics.amnh.org/tool.php?content_id=141" target="_blank">http://biodiversityinformatics.amnh.org/tool.php?content_id=141</a>
 </p>
+<img src="../images/6_theory3.png">
+<table>
+<tr>
+<td width="30%" >143</td>
+<td width="30%" >367</td>
+<td>721</td>
+</tr>
+<tr>
+<td><img src="../images/6_theory4.png" width="200"></td>
+<td><img src="../images/6_theory5.png" width="200"></td>
+<td><img src="../images/6_theory6.png" width="200"></td>
+</tr>
+</table>
+<h2>Color Composites in Landsat TM Data</h2><br>
+<h3>True-Color Composite (3, 2, 1)</h3><br>
+<table>
+<tr>
+<td width="70%">
+<p>
+True-color composite images approximate the range of vision for the human eye, and hence these images appear to be close to what we would expect to see in a normal photograph. True-color images tend to be low in contrast and somewhat hazy in appearance. This is because blue light is more susceptible than other bandwidths to scattering by the atmosphere. Broad-based analysis of underwater features and land cover are representative applications for true-color composites. </p>
+</td>
+<td>
+<img src="../images/6_theory7.png" width="200">
+</td>
+</tr>
+</table>
+
+<h3>Near Infrared Composite (4,3,2)</h3><br>
+<table>
+<tr>
+<td width="70%">
+<p>
+Adding a near infrared (NIR) band and dropping the visible blue band creates a near infrared composite image. Vegetation in the NIR band is highly reflective due to chlorophyll, and an NIR composite vividly shows vegetation in various shades of red. Water appears dark, almost black, due to the absorption of energy in the visible red and NIR bands. <br>
+</p>
+</td>
+<td>
+<img src="../images/6_theory8.png" width="200">
+</td>
+</tr>
+</table>
+<h3>Shortwave Infrared Composite (7, 4, 3 or 7, 4, 2)</h3><br>
+<table>
+<tr>
+<td width="70%">
+<p>
+A shortwave infrared composite image is one that contains at least one shortwave infrared (SWIR) band. Reflectance in the SWIR region is due primarily to moisture content. SWIR bands are especially suited for camouflage detection, change detection, disturbed soils, soil type, and vegetation stress. <br>
+</p>
+</td>
+<td>
+<img src="../images/6_theory9.png" width="200">
+</td>
+</tr>
+</table>
+<p>(Source: http://www.math.montana.edu/~nmp/materials/ess/rs/index3a.html)</p>
+
         </div>
       </section>
 
@@ -159,18 +198,31 @@ Very useful in detecting soil types and soil disturbance since moisture is an im
         <div id="experiment-article-section-3-icon" 
         class="icon">
 	  <!-- Enclose the icon image of your lab. -->
-	  <img src="../images/objective.jpg" />
+	  <img src="../images/procedure.jpg" />
 	</div>
      
         <div id="experiment-article-section-3-heading" 
         class="heading">
-          Objective
+          Manual
         </div>
 
         <div id="experiment-article-section-3-content" 
         class="content">
-          _________________________________________________________________________________________________________________________________________
-        </div>
+        
+<p>
+ 	In this experiment, you have to visualize the effect of various bans combinations of the LANDSAT bands. <br>
+
+<ol>
+<li>You are provided with the Red, Blue, Green colour region of the true color image. You have to just select the band for each color. </li>
+<li>While varying the bands of Red, Green and Blue regions you can notice the cthe change in the <i>Band combination</i> image.</li>
+<li> You cannot choose a same band over two colour regions
+</li>
+</ol>
+</p>     
+
+
+
+	</div>
 
       </section>
 
@@ -192,60 +244,139 @@ Very useful in detecting soil types and soil disturbance since moisture is an im
         class="content">
 <P>
 <APPLET  codebase="classes" code="fokat1.class" width=850 height=500></APPLET>
-</P>     
- 
+
+</P> 
+	        
+            
+     
         </div>
 
       </section>
 
-      <section id="experiment-article-section-5">
-   
-        <div id="experiment-article-section-5-icon" 
-        class="icon">
-	  <!-- Enclose the icon image of your lab.-->
-	  <img src="../images/manual.jpg" />
-	</div>
-
-        <div id="experiment-article-section-5-heading" 
-        class="heading">
-          Manual
-        </div>
-
-        <div id="experiment-article-section-5-content" 
-        class="content">
-<p>
- 	In this experiment, you have to visualize the effect of various bans combinations of the LANDSAT bands. <br>
-<ol>
-<li>You are provided with the Red, Blue, Green colour region of the true color image. You have to just select the band for each color. </li>
-<li>While varying the bands of Red, Green and Blue regions you can notice the cthe change in the <i>Band combination</i> image.</li>
-<li> You cannot choose a same band over two colour regions
-</li>
-</ol>
-</p>     
-
-          </div>
-
-        </section>
-
-        <section id="experiment-article-section-6">
+        <section id="experiment-article-section-5">
       
-          <div id="experiment-article-section-6-icon" 
+          <div id="experiment-article-section-5-icon" 
           class="icon">
 	    <!-- Enclose the icon image of your lab.-->
 	    <img src="../images/quizzes.jpg" />
 	  </div>
 
-          <div id="experiment-article-section-6-heading" 
+          <div id="experiment-article-section-5-heading" 
           class="heading">
             Quizzes
           </div>
 
-          <div id="experiment-article-section-6-content" 
+          <div id="experiment-article-section-5-content" 
           class="content">
             
             <p>
               
-________________________________________________________________________________________________
+              <b>Q1.</b> 
+		In Landsat 432 composite image, vegetation is represented by – colour
+		<br> 
+              <input type="radio" name="q1" id="q1" value="1"> 
+                <font > 
+			a. Green
+		</font> <br> 
+              <input type="radio" name="q1" id="q1" value="2"> 
+                <font > 
+			b. Cyan
+		</font> <br> 
+              <input type="radio" name="q1" id="q1" value="3"> 
+                <font > 
+			c. Red
+		</font> <br> 
+              <input type="radio" name="q1" id="q1" value="4">
+                <font > 
+			d. Yellow
+		</font> <br/><br/> 
+              
+              <b>Q2.</b> 
+		To study vegetation stress which composite is suitable
+		<br> 
+              <input type="radio" name="q2" id="q2" value="1"> 
+                <font > 
+			a. 742
+		</font> <br> 
+		<input type="radio" name="q2" id="q2" value="2"> 
+                <font > 
+			b. 731
+		</font> <br> 
+              <input type="radio" name="q2" id="q2" value="3"> 
+                <font > 
+			c. 432
+		</font> <br> 
+              <input type="radio" name="q2" id="q2" value="4"> 
+                <font > 
+			d. 712
+		</font> <br/><br/> 
+            
+
+              <b>Q3.</b> 
+		Which combination of MODIS image is used to study aquatic habitats
+		<br> 
+              <input type="radio" name="q3" id="q3" value="1"> 
+                <font > 
+			a. 367
+		</font> <br> 
+              <input type="radio" name="q3" id="q3" value="2"> 
+                <font > 
+			b. 143
+		</font> <br> 
+              <input type="radio" name="q3" id="q3" value="3"> 
+                <font > 
+			c. 721
+		</font> <br> 
+              <input type="radio" name="q3" id="q3" value="4">
+                <font > 
+			d. 432
+		</font> <br/><br/> 
+
+
+              <b>Q4.</b> 
+		Snow and ice can be differentiated if we use MODIS composite of
+		<br>
+		
+              <input type="radio" name="q4" id="q4" value="1"> 
+                <font > 
+			a. 367
+		</font> <br> 
+	 	<input type="radio" name="q4" id="q4" value="2"> 
+                <font > 
+			b. 261
+		</font> <br> 
+		<input type="radio" name="q4" id="q4" value="3"> 
+                <font > 
+			c. 721
+		</font> <br> 
+              <input type="radio" name="q4" id="q4" value="4">
+                <font > 
+			d. 143
+		</font> <br/><br/> 
+		
+		
+		
+
+              <b>Q5.</b> 
+		To map burn scar we use following composite
+		<br> 
+              <input type="radio" name="q5" id="q5" value="1"> 
+                <font > 
+			a. 762
+		</font> <br> 
+              <input type="radio" name="q5" id="q5" value="2"> 
+                <font > 
+			b. 721
+		</font> <br> 
+              <input type="radio" name="q5" id="q5" value="3"> 
+                <font > 
+			c. 741
+		</font> <br> 
+              <input type="radio" name="q5" id="q5" value="4">
+                <font > 
+			d. 732
+		</font> <br/><br/> 
+              
               <input type="submit" value="Submit Answers" 
                 class="button" />
             </p>
@@ -254,55 +385,28 @@ ________________________________________________________________________________
 
         </section>
 
-        <section id="experiment-article-section-7">
+        <section id="experiment-article-section-6">
 	  
-          <div id="experiment-article-section-7-icon" 
+          <div id="experiment-article-section-6-icon" 
           class="icon">
 	    <!-- Enclose the icon image of your lab. -->
-	    <img src="../images/procedure.jpg" />
+	    <img src="../images/readings.jpg" />
 	  </div>
 	
-          <div id="experiment-article-section-7-heading" 
+          <div id="experiment-article-section-6-heading" 
           class="heading">
-	    Procedure
+	    Feedback
 	  </div>
 	
-          <div id="experiment-article-section-7-content" 
+          <div id="experiment-article-section-6-content" 
           class="content">
 	    <p>
-	      Procedure for the experiment is as follows.
-___________________________________________________________________________________________________________________________________________
+	      Please provide feedback for the experiment.
 	    </p>
 	  </div>
 	
         </section>
 			
-		
-        <section id="experiment-article-section-8">
-   
-          <div id="experiment-article-section-8-icon" 
-          class="icon">
-	    <!-- Enclose the icon image of your lab.-->
-	    <img src="../images/readings.jpg" />
-	  </div>
-
-          <div id="experiment-article-section-8-heading" 
-          class="heading">
-            Further Readings
-          </div>
-
-          <div id="experiment-article-section-8-content" 
-          class="content">
-           <ol>
-	<li>Introduction to Remote Sensing by James B. Campbell </li>
-<li>Remote Sensing and Image Interpretation by Thomas.M.Lillesand</li>
-<li>Remote sensing Digital Image Analysis by J.A Richards and Xiuping Tia</li>
-<li>Principles of Remote Sensing. An Introductory Textbook. ITC Educational Textbook Series.</li>
-	</ol>
-          </div>
-
-        </section>
-
       </div>
 
 
@@ -326,14 +430,11 @@ ________________________________________________________________________________
 
   <!-- Links to other labs, about us page can be kept the lab 
   footer-->
-  <footer id="lab-footer" class="default">
+  <footer id="lab-footer" >
     <!-- Put the content here-->
-	<p>
-		<a  href="../index.html">Home page</a> |
-		<a  href="">Contact Us</a>|
-	</p>
-
-	<p><a class="static">&copy; 2010, Lab for Spatial Informatics, IIIT Hyderabad</a></p>
+<a href="http://virtual-labs.ac.in/nmeict"target="_blank" >Sponsered by MHRD (NME-ICT) </a> | <a href="http://virtual-labs.ac.in/licensing" target="_blank"> Licensing Terms </a><br>
+		<a  href=""target="_blank">Contact Us</a>|
+<a href="http://lsi.iiit.ac.in" target="_blank">&copy; 2010, Lab for Spatial Informatics, IIIT Hyderabad</a></p>
   </footer>
 
 </div>		

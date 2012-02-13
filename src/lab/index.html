@@ -36,7 +36,7 @@
   ("images/logo.jpeg" here). All major browsers support the link
   rel="shortcut icon"  tag to associate a small icon with the 
   page -->
-  <link rel="shortcut icon" href="images/favicon.png" 
+  <link rel="shortcut icon" href="images/lsi.png" 
   class="custom">
 
 
@@ -101,15 +101,20 @@
                 "</a> </li>");
                                         
       });
-                                
+      /*                          
       $("#lab-article-sections").after("<div id='lab-article-sections-view'> </div>");
-      $("#lab-article-sections-view").html($("#lab-article-sections section:first").html());
-      $("#lab-article-navigation ul > li a").click(function() 
+      $("#lab-article-sections-view").html($("#lab-article-sections section:first").html());*/
+     
+	 $("#lab-article-sections section").hide();
+	  $("#lab-article-sections section:first").show();
+      $("#lab-article-navigation ul > li a").live('click', function() 
       {
                                                 
         menuId = $(this).attr('id'); // this points to the current element
         sectionId = menuId.replace(/-menu/i, "");
-        $("#lab-article-sections-view").html($("#lab-article-sections #" + sectionId).html());
+        $("#lab-article-sections section").hide();
+		$("#lab-article-sections #" + sectionId).show();
+        /*$("#lab-article-sections-view").html($("#lab-article-sections #" + sectionId).html());*/
 
       });
     });		
@@ -118,7 +123,7 @@
   </script>
 
 
-  <script type="text/javascript" src="js/MathJax/MathJax.js"> 
+  <!--<script type="text/javascript" src="js/MathJax/MathJax.js"> -->
   </script>
 
 

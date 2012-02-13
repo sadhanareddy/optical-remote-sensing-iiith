@@ -21,7 +21,7 @@ edit -->
     <div id="experiment-header-logo" class="logo">
       <!-- Enclose the logo image of your lab or write it in 
       text-->
-      <img src="../images/logo.png" />
+      <img src="../images/tophead_5.png" />
     </div>
 
     <div id="experiment-header-heading" class="heading">
@@ -45,11 +45,13 @@ edit -->
     <!-- The lab article has an header, optional navigational 
     menu, number of sections, an optional sidebar and a closing 
     footer-->
+     <div id="experiment-article-breadcrumb" class="breadcrumb">
+     </div>
     
       <header id="experiment-article-heading" class="heading">
         <!-- You can add a welcome message or title of the 
         experiment here -->
-        Black Body Radiation
+        Blackbody Radiation
         <!-- Add any additional element if required with proper 
         enclosing-->
       </header>
@@ -75,37 +77,23 @@ edit -->
           <div id="experiment-article-section-1-icon" 
           class="icon">
 	    <!-- Enclose the icon image of your lab -->
-	    <img src="../images/introduction.jpg" />
+	    <img src="../images/objective.jpg" />
 	  </div>	
           
           <!-- The heading for the section can be enclosed in a 
           div tag. -->
           <div id="experiment-article-section-1-heading" 
           class="heading">
-            Introduction
+            Objective
           </div>
 
           <!-- Write the section content inside a paragraph 
           element, You can also include images with <img> tag -->
           <div id="experiment-article-section-1-content" 
           class="content">	
-<p>
-In this module, basic concepts of Black Body Radiation are explained. 
-<p>An object radiates unique spectral radiant flux depending on the temperature of the object. This radiation is called Thermal Radiation because it mainly depends on temperature. Thermal radiation can be expressed terms of Black Body Theory. 
-<p>In this experiment, the effect of temperature of the body on the wavelengths emitted by an object will be studied. The emitted wavelength is also used in remote sensing sensors to identify an object. For example, Forest fires are and lighted cities are detected at nights using this property by the DMSP OLS sensor.
-
-	</p>
-	<p>
-	<ul>
-		<li>The black body is important in thermal radiation theory and practice. </li>
-		<li>The ideal black body notion is importance in studying thermal radiation and electromagnetic radiation transfer in all wavelength bands. </li>
-		<li>The black body is used as a standard with which the absorption of real bodies is compared.</li>
-	</ul></p>
-<p> 	<p><b><u>Definition of a black body</u></b><br>
-		A black body is an ideal body which allows the whole of the incident radiation to pass into itself (without reflecting the energy ) and absorbs within itself this whole incident radiation (without passing  on the energy). This propety is valid for radiation corresponding to all wavelengths and to all angels of incidence. Therefore, the black body is an ideal absorber of incident radaition.
-Roughly we can say that the stars radiate like blackbody radiators. This is important because it means that we can use the theory for blackbody radiators to infer things about stars. <br>
-	At a particular temperature the black body would emit the maximum amount of energy possible for that temperature.</p>
-      <p>Blackbody radiation does not depend on the type of object emitting it. Entire spectrum of blackbody radiation depends on only one parameter, the temperature, T.</p>
+            <p>
+	This lab discusses basics of black body radiation with an account on what a black body is, and how this is related to the phenomenon of remote sensing. It also focuses on the physics laws governing the black body radiation. Reading this lab will give idea to the users about the absorption and emission patterns by defined objects and their energy capture and use in remote sensing satellite imagery information understanding.	
+            </p>
 
         </div>
 
@@ -133,43 +121,177 @@ Roughly we can say that the stars radiate like blackbody radiators. This is impo
         element, we can also include images with <img> tag -->
         <div id="experiment-article-section-2-content" 
         class="content">
-<p><ol>
-		<li><b>The Rayleigh-Jeans Law.</b>
-			<ol>
-				<li>It agrees with experimental measurements for long wavelengths.</li>
-				<li>It predicts an energy output that diverges towards infinity as wavelengths grow smaller.</li>
-				<li>The failure has become known as the ultraviolet catastrophe</li>
-			</ol>
-		</li>
-		<li><b>Planck Law</b>
-			<p>We have two forms. As a function of wavelength.</p>
-			<img src="../images/pl.jpg"/>			
-			<p>And as a function of frequency</p>
-			<img src="../images/pl1.jpg"/>
-			<p>The Planck Law gives a distribution that peaks at a certain wavelength, the peak shifts to shorter wavelengths for higher temperatures, and the area under the curve grows rapidly with increasing temperature.</p>
-			
-		</li>
-		<li><b>Wein Displacement Law</b><img src=""/>
-			<ol>
-				<li>It tells us as we heat an object up, its color changes from red to orange to white hot.</li>
-				<li>You can use this to calculate the temperature of stars.The surface temperature of the Sun is 5778 K, this temperature corresponds to a peak emission = 502 nm = about 5000 Å.</li>
-				<li>b is a constant of proportionality, called Wien's displacement constant and equals 2.897 768 5(51) × 10–3 m K = 2.897768 5(51) × 106 nm K.</li>
-				
-			</ol>
-			<img src="../images/wd.jpg"/>
-		</li>
-		<li><b>The Stefan-Boltzmann Law</b>
-			<ol>
-				<li>Gives the total energy being emitted at all wavelengths by the blackbody (which is the area under the Planck Law curve).</li>
-				<li>Explains the growth in the height of the curve as the temperature increases. Notice that this growth is very abrupt.</li>
-				<li>Sigma = 5.67 * 10-8 J s-1 m-2 K-4, Known as the Stefan-Boltzmann constant.</li>
-				
-			</ol>
-			<img src="../images/sb.jpg"/>
-		</li>			
-	</ol>
-	<p>Comparison of Rayleigh-Jeans law with Wien's law and Planck's law, for a body of 8 mK temperature
-	<img src="../images/theory_1.jpg"/></p>
+	<p>
+	<a href="www.pep.uni-bremen.de/.../al-hazaimay_pres_tech_07_blackbody.ppt" target="_blank">www.pep.uni-bremen.de/.../al-hazaimay_pres_tech_07_blackbody.ppt</a><br>
+	<ul>
+	<li>The black body is importance in thermal radiation theory and practice.</li>
+	<li>The ideal black body notion is importance in studying thermal radiation and electromagnetic radiation transfer in all wavelength bands. </li>
+	<li>The black body is used as a standard with which the absorption of real bodies is compared.</li>
+	</ul>
+	</p>
+<h3>Definition of a black body</h3>
+<table border ='0'>
+<tr>
+<td width="60%">
+	<p>A black body is an ideal body which allows the whole of the incident radiation to pass into itself ( without reflecting the energy ) and absorbs within itself this whole incident radiation (without passing  on the energy). This propety is valid for radiation corresponding to all wavelengths and to all angels of incidence. Therefore, the black body is an ideal absorber of incident radaition.</p>
+</td>
+<td>
+<img src="../images/2_theory1.png" width ="200" >
+</td>
+</tr>
+</table>
+<p>
+A black body is a theoretical object that absorbs 100% of the radiation that hits it. Therefore it reflects no radiation and appears perfectly black.</p>
+
+<ul>
+<li>Roughly we can say that the stars radiate like blackbody radiators. This is important because it means that we can use the theory for blackbody radiators to infer things about stars. </li>
+<li>At a particular temperature the black body would emit the maximum amount of energy possible for that temperature.</li>
+<li> Blackbody radiation does not depend on the type of object emitting it.<br> Entire spectrum of blackbody radiation depends on only one parameter, the temperature, T. </li>
+</ul>
+<br><br>
+<p>
+<a href="http://students.uta.edu/bl/blq6217/public_html/PHYS1445/PPT_nobg/Chapter_IV_nobg.pdf">http://students.uta.edu/bl/blq6217/public_html/PHYS1445/PPT_nobg/Chapter_IV_nobg.pdf (for following)</a> (for following).<br>
+You heat the rod with a propane torch.Rod starts to glow Red hot.</p>
+<table width="400" border="0">
+<tr>
+<td width="25%">
+ -Orange   </td>
+<td width="30%">-yellow</td>
+<td width="30%"> -white</td>
+<td >-blue</td>
+</tr></table>
+
+<table border ="0">
+<tr>
+<td width = "40%">
+<ul>
+<li>
+Rod feels hotter after each color. As an object heats up, it gets brighter, emitting more electromagnetic radiation at all wavelengths<br>
+–Iron is brighter and feels hotter</li>
+<li>
+The brightest color (most intense wavelength) of the emitted radiation changes with temperature<br>
+–More heat is applied the color changes<br>
+Most objects continuously emit electromagnetic radiation</li>
+<li>
+Most intense wavelength, λmax</li>
+<li>
+Cool objects<br>
+–λmaxis a radio or infrared wavelength</li>
+
+<li>
+Hot objects (ie. Sun)<br>
+–λmaxis a visible wavelength</li>
+</ul>
+</td>
+<td>
+<img src="../images/2_theory2.png"  width="400">
+</td>
+</tr>
+</table>
+
+<table border ="0">
+<tr>
+<td width="30%">
+</br></br>
+<p>Ideal blackbody absorbs all of the electromagnetic radiation that strikes it.</p>
+<ul>
+<li>
+Incoming radiation heats up the blackbody</li>
+<li>
+Reemitted at different intensities</li>
+<li>
+Pattern of a blackbody is independent of the chemical composition</li>
+</ul>
+<p>
+Measurement of radiation emitted by a blackbody at several wavelengths
+Total amount of radiation emitted.<br>
+–Depends on the objects temperature and surface area</p>
+</td>
+<td>
+<img src="../images/2_theory3.png" width="600" >
+</td>
+</tr></table>
+
+
+
+
+<h3>Planck Law</h3>
+<p>
+The Planck Law gives a distribution that peaks at a certain wavelength, the peak shifts to shorter wavelengths for higher temperatures, and the area under the curve grows rapidly with increasing temperature.<br></p>
+<p><a href="http://scienceworld.wolfram.com/physics/PlanckLaw.html">http://scienceworld.wolfram.com/physics/PlanckLaw.html</a></p>
+<table border="0">
+<tr>
+<td><img src="../images/2_theory4.png" width="300"></td>
+<td><img src="../images/2_theory5.png" width="300"></td>
+</tr>
+</table>
+
+
+<h3> Wein Displacement Law</h3><br>
+<table border="0">
+<tr>
+<td width = '40%'>
+<br> <br>
+<ul>
+<li>
+It tells us as we heat an object up, its color changes from red to orange to white hot. <br>
+<center>Lmax=(b/t)</center></li>
+<li>
+You can use this to calculate the temperature of stars.
+The surface temperature of the Sun is 5778 K, this temperature corresponds to a peak emission = 502 nm = about 5000 Å.</li>
+<li>
+b is a constant of proportionality, called Wien's displacement constant and equals 2.897 768 5(51) × 10–3 m K = 2.897768 5(51) × 106 nm</li>
+<li>
+<a href="http://www.rumford.com/radiant/images/Wiengraph.gif">http://www.rumford.com/radiant/images/Wiengraph.gif</a></li>
+</ul>
+</td>
+<td>
+<img src="../images/2_theory6.png" height="500"></td>
+</tr>
+</table>
+
+<h3> The Stefan-Boltzmann Law</h3><br>
+<table border="0">
+<tr>
+<td width ="40%">
+<br>
+<ul>
+<li>
+Gives the total energy being emitted at all wavelengths by the blackbody (which is the area under the Planck Law curve). <br>
+<center>j=a*T^4</center></li>
+<li>
+Explains the growth in the height of the curve as the temperature increases. Notice that this growth is very abrupt.</li>
+<li>
+Sigma = 5.67 * 10-8 J s-1 m-2 K-4, Known as the Stefan-Boltzmann constant</li>
+<li>
+<a href="http://ceos.cnes.fr:8100/cdrom-8/ceos1/science/dg/fig10.gif">http://ceos.cnes.fr:8100/cdrom-8/ceos1/science/dg/fig10.gif</a></li>
+</ul>
+</td>
+<td>
+<img src="../images/2_theory7.png" width="300">
+</td>
+<tr>
+<td>
+<ul>
+<li>As the temperature increases, the peak wavelength emitted by the black body decreases.
+</li>
+<li>
+As temperature increases, the total energy emitted increases, because the total area under the curve increases.
+</li>
+<li>
+The curve gets infinitely close to the x-axis but never touches it.
+</li>
+</ul>
+</td>
+<td>
+<img src="../images/2_theory8.png">
+</td>
+</tr>
+</table>
+<p>
+<a href="http://www.astro.ufl.edu/~oliver/ast3722/lectures/BasicDetectors/BlackBody.gif">http://www.astro.ufl.edu/~oliver/ast3722/lectures/BasicDetectors/BlackBody.gif</a>
+</p>
+
         </div>
       </section>
 
@@ -179,18 +301,38 @@ Roughly we can say that the stars radiate like blackbody radiators. This is impo
         <div id="experiment-article-section-3-icon" 
         class="icon">
 	  <!-- Enclose the icon image of your lab. -->
-	  <img src="../images/objective.jpg" />
+	  <img src="../images/procedure.jpg" />
 	</div>
      
         <div id="experiment-article-section-3-heading" 
         class="heading">
-          Objective
+          Manual
         </div>
 
         <div id="experiment-article-section-3-content" 
         class="content">
-          _________________________________________________________________________________________________________________________________________
-        </div>
+        
+<p> 
+<ul>
+<li>This applet plots <b>Planck's Radiation Law</b> curves for arbitrary temperatures in the range 3000-30,000 K, with the temperature for each case selected by the user with the slider at the bottom.
+</li>
+
+<li>
+Temperature can be selected by sliding the bar to the temperature desired and clicking <b>New</b> for each case to be plotted. 
+</li>
+
+<li>
+There are two scales of slider movement: large moves by dragging the selector, and 1 degree at a time by clicking the space between the slider selector and slider ends.
+</li>
+
+<li>
+<b>Clear</b> button is used to clear the graph plot.
+</li>
+</ul>
+</p>
+
+
+	</div>
 
       </section>
 
@@ -217,85 +359,262 @@ Roughly we can say that the stars radiate like blackbody radiators. This is impo
 
       </section>
 
-      <section id="experiment-article-section-5">
-   
-        <div id="experiment-article-section-5-icon" 
-        class="icon">
-	  <!-- Enclose the icon image of your lab.-->
-	  <img src="../images/manual.jpg" />
-	</div>
-
-        <div id="experiment-article-section-5-heading" 
-        class="heading">
-          Manual
-        </div>
-
-        <div id="experiment-article-section-5-content" 
-        class="content">
-<p> 
-<ul>
-<li>This applet plots <b>Planck's Radiation Law</b> curves for arbitrary temperatures in the range 3000-30,000 K, with the temperature for each case selected by the user with the slider at the bottom.
-</li>
-
-<li>
-Temperature can be selected by sliding the bar to the temperature desired and clicking <b>New</b> for each case to be plotted. 
-</li>
-
-<li>
-There are two scales of slider movement: large moves by dragging the selector, and 1 degree at a time by clicking the space between the slider selector and slider ends.
-</li>
-
-<li>
-<b>Clear</b> button is used to clear the graph plot.
-</li>
-</ul>
-</p>
-
-          </div>
-
-        </section>
-
-        <section id="experiment-article-section-6">
+        <section id="experiment-article-section-5">
       
-          <div id="experiment-article-section-6-icon" 
+          <div id="experiment-article-section-5-icon" 
           class="icon">
 	    <!-- Enclose the icon image of your lab.-->
 	    <img src="../images/quizzes.jpg" />
 	  </div>
 
-          <div id="experiment-article-section-6-heading" 
+          <div id="experiment-article-section-5-heading" 
           class="heading">
             Quizzes
           </div>
 
-          <div id="experiment-article-section-6-content" 
+          <div id="experiment-article-section-5-content" 
           class="content">
             
             <p>
               
-	<b>Q1.</b> A blue colour star is... <br> 
-	<input type="radio" name="q1" id="q1" value="3">hotter than white star</font> <br> 
-	<input type="radio" name="q1" id="q1" value="2"> cooler than white star </font> <br/>
-	<input type="radio" name="q1" id="q1" value="1"> at the same temperature as white star </font> <br/>
-	<input type="radio" name="q1" id="q1" value="0"> at 0 K temperature </font> <br/><br/> 
-	<b>Q2.</b> When the temperature of a black body is lowered to half its original value then the amount of heat radiated will be reduced to...<br> 
-	<input type="radio" name="q2" id="q2" value="3"> 1/2 </font> <br> 
-	<input type="radio" name="q2" id="q2" value="2"> 1/4 </font> <br> 
-	<input type="radio" name="q2" id="q2" value="1"> 1/8 </font> <br> 
-	<input type="radio" name="q2" id="q2"value="0">1/16 </font> <br/><br/> 
-	<b>Q3.</b> A plot of the continuous spectra of five different stars is shown in the figure below. Based on these spectra, which of the stars has the lowest temperature? <br> 
-	<img src="../images/quizbb_1.jpg"/>
-	<input type="radio" name="q3" id="q3" value="4">Star A</font> <br>
-	<input type="radio" name="q3" id="q3" value="3">Star B</font> <br>
-	<input type="radio" name="q3" id="q3" value="2">Star C</font> <br>
-	<input type="radio" name="q3" id="q3" value="1">Star D</font> <br> 
-	<input type="radio" name="q3" id="q3"value="0">Star E </font> <br/><br/> 
-	<b>Q4.</b>At what wavelength would a star radiate the greatest amount of energy if the star has a surface temperature of 60,000 K? <br> 
-	<input type="radio" name="q4" id="q4" value="1">50 nm </font> <br>
-	<input type="radio" name="q4" id="q4" value="1">500 nm </font> <br>
-	<input type="radio" name="q4" id="q4" value="1">300 nm </font> <br>
-	<input type="radio" name="q4" id="q4" value="1">1.8 X 1011 nm </font> <br> 
-	<input type="radio" name="q4" id="q4" value="0"> 180 nm </font> <br/><br/>               <input type="submit" value="Submit Answers" 
+              <b>Q1.</b> 
+		Which bulb’s filament is hottest?
+		<br> 
+              <input type="radio" name="q1" id="q1" value="1"> 
+                <font > 
+			Red
+		</font> <br> 
+              <input type="radio" name="q1" id="q1" value="2"> 
+                <font > 
+			Green 
+		</font> <br> 
+              <input type="radio" name="q1" id="q1" value="3"> 
+                <font > 
+			Blue
+		</font> <br> 
+              <input type="radio" name="q1" id="q1" value="4">
+                <font > 
+			Same 
+		</font> <br/><br/> 
+              
+              <b>Q2.</b> 
+		Blue photons have higher energy than red photons
+		<br> 
+              <input type="radio" name="q2" id="q2" value="1"> 
+                <font > 
+			True
+		</font> <br> 
+              <input type="radio" name="q2" id="q2" value="0"> 
+                <font > 
+			False
+		</font> <br/><br/> 
+            
+
+              <b>Q3.</b> 
+		When the temperature of a black body is lowered to half its original value then the amount of heat radiated will be reduced to...
+		<br> 
+              <input type="radio" name="q3" id="q3" value="1"> 
+                <font > 
+			a. 1/2
+		</font> <br> 
+              <input type="radio" name="q3" id="q3" value="2"> 
+                <font > 
+			b. 1/4
+		</font> <br> 
+              <input type="radio" name="q3" id="q3" value="3"> 
+                <font > 
+			c. 1/8
+		</font> <br> 
+              <input type="radio" name="q3" id="q3" value="4">
+                <font > 
+			d. 1/16
+		</font> <br/><br/> 
+
+
+              <b>Q4.</b> 
+		A plot of the continuous spectra of five different stars is shown in the figure below. Based on these spectra, which of the stars has the lowest temperature?
+		<br>
+</p>
+		<table>
+		<tr>
+		<td width ="30%">
+		<br> 
+              <input type="radio" name="q4" id="q4" value="1"> 
+                <font > 
+			a. Star A
+		</font> <br> 
+              <input type="radio" name="q4" id="q4" value="2"> 
+                <font > 
+			b. Star E 
+		</font> <br> 
+              <input type="radio" name="q4" id="q4" value="3"> 
+                <font > 
+			c. Difficult to say
+		</font> <br> 
+              <input type="radio" name="q4" id="q4" value="4">
+                <font > 
+			d. Depends on weather 
+		</font> <br/><br/> 
+		</td>
+		<td><img src="../images/2_quiz1.png"></td>
+		</tr>
+		</table>
+<p>
+              <b>Q5.</b> 
+		At what wavelength would a star radiate the greatest amount of energy if the star has a surface temperature of 6000 K?
+		<br> 
+              <input type="radio" name="q5" id="q5" value="1"> 
+                <font > 
+			a. 5 nm
+		</font> <br> 
+              <input type="radio" name="q5" id="q5" value="2"> 
+                <font > 
+			b. 500 nm
+		</font> <br> 
+              <input type="radio" name="q5" id="q5" value="3"> 
+                <font > 
+			c. 300 m
+		</font> <br> 
+              <input type="radio" name="q5" id="q5" value="4">
+                <font > 
+			d. 1.8×107 m
+		</font> <br/><br/> 
+              
+		<b>Q6.</b> 
+		Black body radiation is the emission of light from metal surfaces.
+		<br> 
+              <input type="radio" name="q6" id="q6" value="1"> 
+                <font > 
+			True
+		</font> <br> 
+              
+              <input type="radio" name="q6" id="q6" value="0">
+                <font > 
+			False 
+		</font> <br/><br/> 
+
+              <b>Q7.</b> 
+		Use Wein's Law to find the peak radiation for a star whose surface temperature is 2,900 K. In what form of energy would this peak fall?
+		<br> 
+              <input type="radio" name="q7" id="q7" value="1"> 
+                <font > 
+			a. 100, 000 nm in the microwaves
+		</font> <br> 
+              <input type="radio" name="q7" id="q7" value="2"> 
+                <font > 
+			b. 1,000 nm in the near infrared
+		</font> <br> 
+              <input type="radio" name="q7" id="q7" value="3"> 
+                <font > 
+			c. 100 nm in the ultraviolet
+		</font> <br> 
+              <input type="radio" name="q7" id="q7" value="4">
+                <font > 
+			d. 100 nm in the X-rays 
+		</font> <br/><br/> 
+              
+		<b>Q8.</b> 
+		In what wavelength range does most of the solar radiation fall?
+		<br> 
+              <input type="radio" name="q8" id="q8" value="1"> 
+                <font > 
+			a. Ultraviolet
+		</font> <br> 
+              <input type="radio" name="q8" id="q8" value="2"> 
+                <font > 
+			b. visible 
+		</font> <br> 
+              <input type="radio" name="q8" id="q8" value="3"> 
+                <font > 
+			c. infrared
+		</font> <br> 
+              <input type="radio" name="q8" id="q8" value="4">
+                <font > 
+			d. radio
+		</font> <br/><br/> 
+              
+		<b>Q9.</b> 
+		For a body with a surface temperature close to 27oC, at what wavelength would the thermal spectrum reach a maximum?
+		<br> 
+              <input type="radio" name="q9" id="q9" value="1"> 
+                <font > 
+			a. 10 µm
+		</font> <br> 
+              <input type="radio" name="q9" id="q9" value="2"> 
+                <font > 
+			b. 100 µm
+		</font> <br> 
+              <input type="radio" name="q9" id="q9" value="3"> 
+                <font > 
+			c. 10 mm
+		</font> <br> 
+              <input type="radio" name="q9" id="q9" value="4">
+                <font > 
+			d. 100 mm 
+		</font> <br/><br/> 
+              
+		<b>Q10.</b> 
+		As a glowing black body gets cooler, what happens to its color and what happens to the brightness of the light it emits? 
+		<br> 
+              <input type="radio" name="q10" id="q10" value="1"> 
+                <font > 
+			a. Color gets more blue; doesn't change brightness.
+		</font> <br> 
+              <input type="radio" name="q10" id="q10" value="2"> 
+                <font > 
+			b. Color gets more blue; emits more light.
+		</font> <br> 
+              <input type="radio" name="q10" id="q10" value="3"> 
+                <font > 
+			c. Color gets more red; emits more light.
+		</font> <br> 
+              <input type="radio" name="q10" id="q10" value="4">
+                <font > 
+			d. Color gets more red; emits less light
+		</font> <br/><br/> 
+              
+
+		<b>Q11.</b> 
+		The wavelength at which the maximum energy is radiated from a black body is
+		<br> 
+              <input type="radio" name="q11" id="q11" value="1"> 
+                <font > 
+			a. Inversely proportional to temperature ($\lambda_{max} = const/T$).
+		</font> <br> 
+              <input type="radio" name="q11" id="q11" value="2"> 
+                <font > 
+			b. Directly proportional to temperature ($\lambda_{max} = const * T$)
+		</font> <br> 
+              <input type="radio" name="q11" id="q11" value="3"> 
+                <font > 
+			c. Directly proportional to the fourth power of temperature ($\lambda_{max} = const * T^4$).
+		</font> <br> 
+              <input type="radio" name="q11" id="q11" value="4">
+                <font > 
+			d. Independent of the temperature
+		</font> <br/><br/> 
+             
+
+		<b>Q12.</b> 
+		A black body emits an amount of radiation from each unit area of its surface that is proportional to
+		<br> 
+              <input type="radio" name="q12" id="q12" value="1"> 
+                <font > 
+			a. the inverse square of its absolute temperature.
+		</font> <br> 
+              <input type="radio" name="q12" id="q12" value="2"> 
+                <font > 
+			b. the cube of its temperature divided by the mass.
+		</font> <br> 
+              <input type="radio" name="q12" id="q12" value="3"> 
+                <font > 
+			c. the fourth power of its absolute temperature.
+		</font> <br> 
+              <input type="radio" name="q12" id="q12" value="4">
+                <font > 
+			d. the fourth power of the wavelength
+		</font> <br/><br/> 
+              <input type="submit" value="Submit Answers" 
                 class="button" />
             </p>
 
@@ -303,58 +622,28 @@ There are two scales of slider movement: large moves by dragging the selector, a
 
         </section>
 
-        <section id="experiment-article-section-7">
+        <section id="experiment-article-section-6">
 	  
-          <div id="experiment-article-section-7-icon" 
+          <div id="experiment-article-section-6-icon" 
           class="icon">
 	    <!-- Enclose the icon image of your lab. -->
-	    <img src="../images/procedure.jpg" />
+	    <img src="../images/readings.jpg" />
 	  </div>
 	
-          <div id="experiment-article-section-7-heading" 
+          <div id="experiment-article-section-6-heading" 
           class="heading">
-	    Procedure
+	    Feedback
 	  </div>
 	
-          <div id="experiment-article-section-7-content" 
+          <div id="experiment-article-section-6-content" 
           class="content">
 	    <p>
-	      Procedure for the experiment is as follows.
-___________________________________________________________________________________________________________________________________________
+	      Please provide feedback for the experiment.
 	    </p>
 	  </div>
 	
         </section>
 			
-		
-        <section id="experiment-article-section-8">
-   
-          <div id="experiment-article-section-8-icon" 
-          class="icon">
-	    <!-- Enclose the icon image of your lab.-->
-	    <img src="../images/readings.jpg" />
-	  </div>
-
-          <div id="experiment-article-section-8-heading" 
-          class="heading">
-            Further Readings
-          </div>
-
-          <div id="experiment-article-section-8-content" 
-          class="content">
-   <ol>	
-		<li>
-		<a href="http://www.iki.rssi.ru/asp/pub_sha1/Sharch06.pdf">http://www.iki.rssi.ru/asp/pub_sha1/Sharch06.pdf</a>
-		</li>
-		<li>
-		<a href="http://en.wikipedia.org/wiki/Black_body">http://en.wikipedia.org/wiki/Black_body</a>
-		</li> 
- 		
-	</ol>            
-          </div>
-
-        </section>
-
       </div>
 
 
@@ -378,10 +667,11 @@ ________________________________________________________________________________
 
   <!-- Links to other labs, about us page can be kept the lab 
   footer-->
-  <footer id="lab-footer" class="default">
+  <footer id="lab-footer" >
     <!-- Put the content here-->
-	<p><a  href="../index.html">Home page</a>|<a  href="">Contact Us</a></p>
-	<p><a class="static">&copy; 2010, Lab for Spatial Informatics, IIIT Hyderabad</a></p>
+<a href="http://virtual-labs.ac.in/nmeict"target="_blank" >Sponsered by MHRD (NME-ICT) </a> | <a href="http://virtual-labs.ac.in/licensing" target="_blank"> Licensing Terms </a><br>
+		<a  href=""target="_blank">Contact Us</a>|
+<a href="http://lsi.iiit.ac.in" target="_blank">&copy; 2010, Lab for Spatial Informatics, IIIT Hyderabad</a></p>
   </footer>
 
 </div>		

@@ -203,8 +203,8 @@ nav#lab-article-navigation ul li a:focus, nav#experiment-article-navigation ul l
 }
 .content img
 {
-	width:800px;
-	height:400px;
+/*	width:800px;
+	height:400px;*/
 	padding-left:40px;
 	padding-bottom:10px;
 }
@@ -286,7 +286,7 @@ nav#lab-article-navigation ul li a:focus, nav#experiment-article-navigation ul l
     font-size: 16px;
     font-weight: bold;*/
     border-collapse:separate;
-    margin-left:40px;
+    margin-left:50px;
     padding-bottom:10px;
 }
 
@@ -297,7 +297,7 @@ nav#lab-article-navigation ul li a:focus, nav#experiment-article-navigation ul l
 	font-weight: normal;
 	text-transform:uppercase;
 	padding: 10px;
-    border:1px solid #b2bbc0;
+    /*border:1px solid #b2bbc0;*/
 }
 .content table tbody th
 {
@@ -306,14 +306,14 @@ nav#lab-article-navigation ul li a:focus, nav#experiment-article-navigation ul l
 	font-weight: normal;
 	text-transform:uppercase;
 	padding: 10px;
-    border:1px solid #b2bbc0;
+    /*border:1px solid #b2bbc0;*/
 }	
 	
 .content table tbody td
 {
-    padding:10px;
+    padding:5px;
     text-align:left;
-    border:1px solid #b2bbc0;
+    /*border:1px solid #b2bbc0;*/
     max-width:700px;
 
 }	
