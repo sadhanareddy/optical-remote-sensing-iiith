@@ -44,7 +44,7 @@ $html = file_get_html('./content.html');
 $vlab_url = "http://virtual-labs.ac.in/"; 
 $css_js   = "";
  $lab_url  = "http://".$_SERVER['HTTP_HOST'] . "/labs/cse21/index.php";
-$exp_url  = "http://deploy.virtual-labs.ac.in/labs/cse21/exp/index.php";
+$exp_url  = "./exp/index.php";
 $base_url = "http://".$_SERVER['HTTP_HOST'] . $_SERVER['SCRIPT_NAME']; 
 
 include('./exp_template.php');
