@@ -1,0 +1,497 @@
+<!-- This file needs to be edited by the lab developer to suit
+the requirements of their lab in particular.-->
+
+<!-- Add class="default" to include any element as it is
+specified in default.html. 
+Do not include class="default" to the elements that you want to
+edit -->
+
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+
+<div id="experiment"> <!-- The Experiment Document Container-->
+
+  <!-- The lab Header contains the logo and the name of the lab,
+  usually displayed on the top of the page-->
+
+  <header id="experiment-header" class="default">
+  
+    <div id="experiment-header-logo" class="logo">
+      <!-- Enclose the logo image of your lab or write it in 
+      text-->
+      <img src="../images/virtualLabsLogo.jpg" />
+    </div>
+
+    <div id="experiment-header-heading" class="heading">
+      <!-- Write the name of your lab and link it to the home 
+      page of your lab (h1 tag is preferred while writing your 
+      lab name)-->
+      <a href="../index.php">Optical Remote Sensing Lab</a>	
+    </div>
+
+    <!-- Add any additional element you want to add to the lab 
+    header, For example : Help (Enclosing them with suitable 
+    div is recommended)-->
+
+  </header>
+
+
+  <!-- The lab article is the main content area where all the 
+  experiment content sits-->
+  <article id="experiment-article">
+  
+    <!-- The lab article has an header, optional navigational 
+    menu, number of sections, an optional sidebar and a closing 
+    footer-->
+     <div id="experiment-article-breadcrumb" class="breadcrumb">
+     </div>
+    
+      <header id="experiment-article-heading" class="heading">
+        <!-- You can add a welcome message or title of the 
+        experiment here -->
+        Reflectance of Natural Objects
+        <!-- Add any additional element if required with proper 
+        enclosing-->
+      </header>
+
+      <!-- Navigation menu is useful to organize the view of 
+      multiple sections inside the article-->
+      <nav id="experiment-article-navigation" class="default">
+        <ul id="experiment-article-navigation-menu">
+          <!-- The menu can be dynamically generated to contain 
+          the headings of your sections or instead write the 
+          menu items of your choice individually enclosedu in 
+          <li> tag as shown below-->
+        </ul>
+      </nav>
+
+      <!-- All the sections of your lab or experiment can be 
+      enclosed together with a div element as shown below-->
+      <div id="experiment-article-sections">
+
+        <!-- First section of the article-->
+        <section id="experiment-article-section-1">
+          
+          <div id="experiment-article-section-1-icon" 
+          class="icon">
+	    <!-- Enclose the icon image of your lab -->
+	    <img src="../images/objective.jpg" />
+	  </div>	
+          
+          <!-- The heading for the section can be enclosed in a 
+          div tag. -->
+          <div id="experiment-article-section-1-heading" 
+          class="heading">
+            Objective
+          </div>
+
+          <!-- Write the section content inside a paragraph 
+          element, You can also include images with <img> tag -->
+          <div id="experiment-article-section-1-content" 
+          class="content">	
+            <p>
+The main objective of this lab is focus on the spectral reflectance pattern of different objects of the earth surface. Remote sensing satellite imagery, typically shows various gradients of coloured features, formed from the captured reflectance of different objects.</p>
+<p>
+This variation in reflectance curves by each object helps in their identification and distinguishing them from other. At the end, this lab will familiarize the users with different spectral curves and how they differ in the electromagnetic spectrum depending on the object and thus how to differentiate similar objects spatially and temporally.
+            </p>
+
+        </div>
+
+
+      </section>
+
+      <!-- Second section of the article-->
+      <section id="experiment-article-section-2">
+        
+        <div id="experiment-article-section-2-icon" 
+        class="icon">
+	  <!-- Enclose the icon image of your lab. -->
+	  <img src="../images/theory.jpg" />
+	</div>
+				
+        <!-- The heading for the section can be enclosed in a 
+        div tag. -->
+        <div id="experiment-article-section-2-heading" 
+        class="heading">
+          Theory
+        </div>
+
+
+        <!-- Write the section content inside a paragraph 
+        element, we can also include images with <img> tag -->
+        <div id="experiment-article-section-2-content" 
+        class="content">
+          <p>
+Ref:<a href="http://wamis.org/agm/pubs/agm8/Paper-2.pdf">http://wamis.org/agm/pubs/agm8/Paper-2.pdf</a>
+          </p>
+	<p>
+	Detection and discrimination of objects or surface features means detecting and recording of radiant energy reflected or emitted by objects or surface material. Different objects return different amount of energy in different bands of the electromagnetic spectrum, incident upon it. This depends on the property of material (structural, chemical, and physical), surface roughness, angle of incidence, intensity, and wavelength of radiant energy.</p>
+<p>
+Spectral reflectance is the ratio of reflected energy to incident energy as a function of wavelength. Various materials of the earth’s surface have different spectral reflectance characteristics. Spectral reflectance is responsible for the color or tone in a photographic image of an object. Trees appear green because they reflect more of the green wavelength. The values of the spectral reflectance of objects averaged over different, well-defined wavelength intervals comprise the spectral signature of the objects or features by which they can be distinguished. To obtain the necessary ground truth for the interpretation of multispectral imagery, the spectral characteristics of various natural objects have been extensively measured and recorded.</p>
+<p>
+The spectral reflectance is dependent on wavelength, it has different values at different wavelengths for a given terrain feature. The plot between spectral reflectance at particular wavelength and energy reflected from the object is called a spectral reflectance curve. This varies with the variation in the chemical composition and physical conditions of the feature, which results in a range of values. The spectral response patterns are averaged to get a generalized form, which is called generalized spectral response pattern for the object concerned. Spectral signature is a term used for unique spectral response pattern, which is characteristic of a terrain feature. Figure 5 shows a typical reflectance curves for three basic types of earth surface features, healthy vegetation, dry bare soil (grey-brown and loamy) and clear lake water.</p>
+
+
+<img src="../images/3_theory1.png"/ align="middle"/>
+<h3>Reflectance Characteristics of Earth’s Cover types</h3>
+<p>
+The spectral characteristics of the three main earth surface features are discussed below:<br>
+<b>Vegetation:</b> The spectral characteristics of vegetation vary with wavelength. Plant pigment in leaves called chlorophyll strongly absorbs radiation in the red and blue wavelengths but reflects green wavelength. The internal structure of healthy leaves acts as diffuse reflector of near infrared wavelengths. Measuring and monitoring the near infrared reflectance is one way that
+Scientists determine how healthy particular vegetation may be. <br>
+</p>
+<p>
+<a href="http://spacegrant.nmsu.edu/statewide/projects/remote_sensing.pdf">http://spacegrant.nmsu.edu/statewide/projects/remote_sensing.pdf</a>
+The shape of the reflectance spectrum can be used for <b>identification of vegetation type.</b> For example, the reflectance spectra of dry grass and green grass in the previous figures can be distinguished although they exhibit the generally characteristics of high NIR but low visible reflectance. Dry grass has higher reflectance in the visible region but lower reflectance in the NIR region. For the same vegetation type, the reflectance spectrum also depends on other factors
+such as the leaf moisture content and health of the plants. These properties enable <b>vegetation condition</b> to be monitored using remotely sensed images.
+</p>
+<table>
+<tr>
+<td width="50%">
+<img src="../images/3_theory2.png"width="400"></td>
+<td>
+<img src="../images/3_theory3.png" width="400" ></td>
+</tr></table>
+
+<p>
+<b>Water:</b> Majority of the radiation incident upon water is not reflected but is either absorbed or transmitted. Longer visible wavelengths and near infrared radiation is absorbed more by water than by the visible wavelengths. Thus water looks blue or blue green due to stronger reflectance at these shorter wavelengths and darker if viewed at red or near infrared wavelengths. The factors that affect the variability in reflectance of a water body are depth of water, materials within water and surface roughness of water.</p>
+<p>
+<b>Soil:</b> The majority of radiation incident on a soil surface is either reflected or absorbed and little is transmitted. The characteristics of soil that determine its reflectance properties are its moisture content, organic matter content, texture, structure and iron oxide content. The soil curve shows less peak and valley variations. The presence of moisture in soil decreases its reflectance.</p>
+<p>By measuring the energy that is reflected by targets on earth’s surface over a variety of different wavelengths, we can build up a spectral signature for that object. And by comparing the response pattern of different features we may be able to distinguish between them, which we may not be able to do if we only compare them at one wavelength. For example, Water and Vegetation reflect somewhat similarly in the visible wavelength but not in the infrared.</p>
+        </div>
+      </section>
+
+
+      <section id="experiment-article-section-3">
+        
+        <div id="experiment-article-section-3-icon" 
+        class="icon">
+	  <!-- Enclose the icon image of your lab. -->
+	  <img src="../images/procedure.jpg" />
+	</div>
+     
+        <div id="experiment-article-section-3-heading" 
+        class="heading">
+          Manual
+        </div>
+
+        <div id="experiment-article-section-3-content" 
+        class="content">
+        
+<p>
+<ol>
+ 	<li>In this experiment you are provided with a wavelength slider according to which you can adjust the wavelength emmited by the spectrometer to the object placed on the table. You are provoded with four such objects.  </li>
+<li>Start the experiment by selecting wavelength from slider.Reflected ray will be captured by the lens of the spectrometer and reflectance is calulated. </li>
+<li>Take observations and fill them in the boxes against wavelength and reflectance, provided in the parallel pane, and mark the points.</li>
+<li> Likewise mark atleast 5-6 points and generate graph.
+</li>
+<li>
+ Now, press Compare button to compare your observed graph with the original graph.
+</li>
+</ol>
+</p>     
+
+
+
+	</div>
+
+      </section>
+
+
+      <section id="experiment-article-section-4">
+
+        <div id="experiment-article-section-4-icon" 
+        class="icon">
+	  <!-- Enclose the icon image of your lab.-->
+	  <img src="../images/simulation.jpg" />
+	</div>
+
+        <div id="experiment-article-section-4-heading" 
+        class="heading">
+          Experiment
+        </div>
+
+        <div id="experiment-article-section-4-content" 
+        class="content">
+          <P>
+<APPLET codebase="classes" code="fokat1.class" width=1000 height=550></APPLET>
+</P>
+        </div>
+
+      </section>
+
+        <section id="experiment-article-section-5">
+      
+          <div id="experiment-article-section-5-icon" 
+          class="icon">
+	    <!-- Enclose the icon image of your lab.-->
+	    <img src="../images/quizzes.jpg" />
+	  </div>
+
+          <div id="experiment-article-section-5-heading" 
+          class="heading">
+            Quizzes
+          </div>
+
+          <div id="experiment-article-section-5-content" 
+          class="content">
+            
+            <p>
+              
+              <b>Q1.</b> 
+		Vegetation shows high absorption of
+		<br> 
+              <input type="radio" name="q1" id="q1" value="1"> 
+                <font > 
+			a. Red light
+		</font> <br> 
+              <input type="radio" name="q1" id="q1" value="2"> 
+                <font > 
+			b. Blue light
+		</font> <br> 
+              <input type="radio" name="q1" id="q1" value="3"> 
+                <font > 
+			c. Green light
+		</font> <br> 
+              <input type="radio" name="q1" id="q1" value="4">
+                <font > 
+			d. Red and Blue light
+		</font> <br/><br/> 
+              
+              <b>Q2.</b> 
+		Vegetation appears green in colour due
+		<br> 
+              <input type="radio" name="q2" id="q2" value="1"> 
+                <font > 
+			a. Absorption of green light
+		</font> <br> 
+		<input type="radio" name="q2" id="q2" value="2"> 
+                <font > 
+			b. Reflectance of green light
+		</font> <br> 
+              <input type="radio" name="q2" id="q2" value="3"> 
+                <font > 
+			c. Absorption of red light for photosynthesis
+		</font> <br> 
+              <input type="radio" name="q2" id="q2" value="4"> 
+                <font > 
+			d. Scattering of green light
+		</font> <br/><br/> 
+            
+
+              <b>Q3.</b> 
+		A healthy vegetation reflects
+		<br> 
+              <input type="radio" name="q3" id="q3" value="1"> 
+                <font > 
+			a. Near Infra red 
+		</font> <br> 
+              <input type="radio" name="q3" id="q3" value="2"> 
+                <font > 
+			b. Red light
+		</font> <br> 
+              <input type="radio" name="q3" id="q3" value="3"> 
+                <font > 
+			c. Green light
+		</font> <br> 
+              <input type="radio" name="q3" id="q3" value="4">
+                <font > 
+			d. None
+		</font> <br/><br/> 
+
+
+              <b>Q4.</b> 
+		Longer visible wavelengths are absorbed by water
+		<br>
+		
+              <input type="radio" name="q4" id="q4" value="1"> 
+                <font > 
+			a. True
+		</font> <br> 
+              <input type="radio" name="q4" id="q4" value="0">
+                <font > 
+			b. False
+		</font> <br/><br/> 
+		
+		
+		
+
+              <b>Q5.</b> 
+		Water appears dark in colour at ______ and ____________ wavelengths
+		<br> 
+              <input type="radio" name="q5" id="q5" value="1"> 
+                <font > 
+			a. red, blue
+		</font> <br> 
+              <input type="radio" name="q5" id="q5" value="2"> 
+                <font > 
+			b. red, near infrared
+		</font> <br> 
+              <input type="radio" name="q5" id="q5" value="3"> 
+                <font > 
+			c. blue, green
+		</font> <br> 
+              <input type="radio" name="q5" id="q5" value="4">
+                <font > 
+			d. voilet, blue
+		</font> <br/><br/> 
+              
+		<b>Q6.</b> 
+		The presence of moisture in soil 
+		<br> 
+              <input type="radio" name="q6" id="q6" value="1"> 
+                <font > 
+			a. Decreases its Reflectance
+		</font> <br> 
+                <input type="radio" name="q6" id="q6" value="2"> 
+                <font > 
+			b. Increases its absorption
+		</font> <br> 
+              <input type="radio" name="q6" id="q6" value="3"> 
+                <font > 
+			c. Increases its reflectance
+		</font> <br> 
+              <input type="radio" name="q6" id="q6" value="4">
+                <font > 
+			d. Decreases its absorption
+		</font> <br/><br/> 
+
+              <b>Q7.</b> 
+		A stressed vegetation reflectance of
+		<br> 
+              <input type="radio" name="q7" id="q7" value="1"> 
+                <font > 
+			a. Increase reflectance in Red
+		</font> <br> 
+              <input type="radio" name="q7" id="q7" value="2"> 
+                <font > 
+			b. Less absorption of blue and red
+		</font> <br> 
+              <input type="radio" name="q7" id="q7" value="3"> 
+                <font > 
+			c. High reflectance of green light
+		</font> <br> 
+              <input type="radio" name="q7" id="q7" value="4">
+                <font > 
+			d. a and b
+		</font> <br/><br/> 
+              
+		<b>Q8.</b> 
+		Water has higher absorption at
+		<br> 
+              <input type="radio" name="q8" id="q8" value="1"> 
+                <font > 
+			a. Blue
+		</font> <br> 
+              <input type="radio" name="q8" id="q8" value="2"> 
+                <font > 
+			b. Green
+		</font> <br> 
+              <input type="radio" name="q8" id="q8" value="3"> 
+                <font > 
+			c. Near Infra red
+		</font> <br> 
+              <input type="radio" name="q8" id="q8" value="4">
+                <font > 
+			d. a & b
+		</font> <br/><br/> 
+              
+		<b>Q9.</b> 
+		Increase in chlorophyll concentration decrease water reflectance in blue wavelengths and increases in green wavelengths
+		<br> 
+              <input type="radio" name="q9" id="q9" value="1"> 
+                <font > 
+			a. True
+		</font> <br> 
+              <input type="radio" name="q9" id="q9" value="0">
+                <font > 
+			b. False 
+		</font> <br/><br/> 
+              
+		<b>Q10.</b> 
+		10. The dips in the reflectance pattern for vegetation at 1.4, 1.9 and 2.7 µm is due to their _____________ by water in the leaves 
+		<br> 
+              <input type="radio" name="q10" id="q10" value="1"> 
+                <font > 
+			a. Absorption
+		</font> <br> 
+              <input type="radio" name="q10" id="q10" value="2"> 
+                <font > 
+			b. Reflection
+		</font> <br> 
+              <input type="radio" name="q10" id="q10" value="3"> 
+                <font > 
+			c. Emission
+		</font> <br> 
+              <input type="radio" name="q10" id="q10" value="4">
+                <font > 
+			d. None
+		</font> <br/><br/> 
+              
+
+		
+              <input type="submit" value="Submit Answers" 
+                class="button" />
+            </p>
+
+          </div>
+
+        </section>
+
+        <section id="experiment-article-section-6">
+	  
+          <div id="experiment-article-section-6-icon" 
+          class="icon">
+	    <!-- Enclose the icon image of your lab. -->
+	    <img src="../images/readings.jpg" />
+	  </div>
+	
+          <div id="experiment-article-section-6-heading" 
+          class="heading">
+	    Feedback
+	  </div>
+	
+          <div id="experiment-article-section-6-content" 
+          class="content">
+	    <p>
+	      Please provide feedback for the experiment.
+	    </p>
+	  </div>
+	
+        </section>
+			
+      </div>
+
+
+    <!-- An article can have a sidebar that contain related 
+    links and additional material (however it is kept optional 
+    at this moment) -->
+    <aside id="lab-article-sidebar" class="default">
+      <!-- put the content that you want to appear in the 
+      sidebar -->	
+    </aside>
+
+
+    <!-- Article footer can display related content and 
+    additional links -->						
+    <footer id="lab-article-footer" class="default">
+      <!-- Put the content that you want to appear here -->
+    </footer>
+
+  </article>
+
+
+  <!-- Links to other labs, about us page can be kept the lab 
+  footer-->
+  <footer id="lab-footer" >
+    <!-- Put the content here-->
+<a href="http://virtual-labs.ac.in/nmeict"target="_blank" >Sponsered by MHRD (NME-ICT) </a> | <a href="http://virtual-labs.ac.in/licensing" target="_blank"> Licensing Terms </a><br>
+		<a  href=""target="_blank">Contact Us</a>|
+<a href="http://lsi.iiit.ac.in" target="_blank">&copy; 2010, Lab for Spatial Informatics, IIIT Hyderabad</a></p>
+  </footer>
+
+</div>		
+
+</body>
+</html>

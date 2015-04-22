@@ -1,0 +1,416 @@
+<!-- This file needs to be edited by the lab developer to suit
+the requirements of their lab in particular.-->
+
+<!-- Add class="default" to include any element as it is
+specified in default.html. 
+Do not include class="default" to the elements that you want to
+edit -->
+
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+
+<div id="experiment"> <!-- The Experiment Document Container-->
+
+  <!-- The lab Header contains the logo and the name of the lab,
+  usually displayed on the top of the page-->
+
+  <header id="experiment-header" class="default">
+  
+    <div id="experiment-header-logo" class="logo">
+      <!-- Enclose the logo image of your lab or write it in 
+      text-->
+      <img src="../images/virtualLabsLogo.jpg" />
+    </div>
+
+    <div id="experiment-header-heading" class="heading">
+      <!-- Write the name of your lab and link it to the home 
+      page of your lab (h1 tag is preferred while writing your 
+      lab name)-->
+      <a href="../index.php">Optical Remote Sensing Lab</a>	
+    </div>
+
+    <!-- Add any additional element you want to add to the lab 
+    header, For example : Help (Enclosing them with suitable 
+    div is recommended)-->
+
+  </header>
+
+
+  <!-- The lab article is the main content area where all the 
+  experiment content sits-->
+  <article id="experiment-article">
+  
+    <!-- The lab article has an header, optional navigational 
+    menu, number of sections, an optional sidebar and a closing 
+    footer-->
+     <div id="experiment-article-breadcrumb" class="breadcrumb">
+     </div>
+    
+      <header id="experiment-article-heading" class="heading">
+        <!-- You can add a welcome message or title of the 
+        experiment here -->
+	Band Algebra - Index based Analysis
+        <!-- Add any additional element if required with proper 
+        enclosing-->
+      </header>
+
+      <!-- Navigation menu is useful to organize the view of 
+      multiple sections inside the article-->
+      <nav id="experiment-article-navigation" class="default">
+        <ul id="experiment-article-navigation-menu">
+          <!-- The menu can be dynamically generated to contain 
+          the headings of your sections or instead write the 
+          menu items of your choice individually enclosedu in 
+          <li> tag as shown below-->
+        </ul>
+      </nav>
+
+      <!-- All the sections of your lab or experiment can be 
+      enclosed together with a div element as shown below-->
+      <div id="experiment-article-sections">
+
+        <!-- First section of the article-->
+        <section id="experiment-article-section-1">
+          
+          <div id="experiment-article-section-1-icon" 
+          class="icon">
+	    <!-- Enclose the icon image of your lab -->
+	    <img src="../images/objective.jpg" />
+	  </div>	
+          
+          <!-- The heading for the section can be enclosed in a 
+          div tag. -->
+          <div id="experiment-article-section-1-heading" 
+          class="heading">
+            Objective
+          </div>
+
+          <!-- Write the section content inside a paragraph 
+          element, You can also include images with <img> tag -->
+          <div id="experiment-article-section-1-content" 
+          class="content">	
+            <p>
+	The main aim of this lab is to bring awareness among the users about information extraction from the satellite imagery using various band algebra operations. Mostly ratio of bands is used to generate indices to extract information for further analysis using various band combinations. At the end user gets an idea about useful features of these indices and their suitable application with relevant band ratios.
+            </p>
+
+        </div>
+
+
+      </section>
+
+      <!-- Second section of the article-->
+      <section id="experiment-article-section-2">
+        
+        <div id="experiment-article-section-2-icon" 
+        class="icon">
+	  <!-- Enclose the icon image of your lab. -->
+	  <img src="../images/theory.jpg" />
+	</div>
+				
+        <!-- The heading for the section can be enclosed in a 
+        div tag. -->
+        <div id="experiment-article-section-2-heading" 
+        class="heading">
+          Theory
+        </div>
+
+
+        <!-- Write the section content inside a paragraph 
+        element, we can also include images with <img> tag -->
+        <div id="experiment-article-section-2-content" 
+        class="content">
+          <p>
+		<a href="http://eoedu.belspo.be/en/guide/indices.asp?section=3.9">http://eoedu.belspo.be/en/guide/indices.asp?section=3.9</a><br>
+	The fact that the data used in remote sensing are digital makes them most suitable for operations between channels. The principle of such operations is to perform more or less complex mathematical operations on each pixel that call upon the numerical values seen for the pixel in the various spectral bands. A very large number of indices of various degrees of sophistication have been developed specifically for analysing remote sensing data. 
+</p>
+<p>
+<a href="http://www.cnr.uidaho.edu/for570/pdfs/for570/Lecture%204_specindexand%20sep.pdf">http://www.cnr.uidaho.edu/for570/pdfs/for570/Lecture%204_specindexand%20sep.pdf</a><br>
+For decades, remote sensing scientists have used spectral indices to help them predict, model, or infer surface process. These indices have been developed to assess in the monitoring of several different land change processes including:
+</p>
+<center>
+<ul>
+<li>Vegetation Health and Status</li>
+<li>Burned Area</li>
+<li>Fire Severity</li>
+</ul>
+</center>
+<br>
+<p>
+<i>Following are the few indices related to vegetation analysis.</i>
+</p>
+<p>
+<b>RVI</b> is the ratio vegetation index which was first described by Jordan (1969).  This is the most widely calculated vegetation index, although you rarely hear of it as a vegetation index.  A common practice in remote sensing is the use of band ratios to eliminate various albedo effects.  Many people use the ratio of NIR to red as the vegetation component of the scene, and this is in fact the RVI<br>
+<center> RVI = ( NIR / Red)</center>
+</p>
+<p>
+<b>NDVI</b> is the Normalized Difference Vegetation Index which is ascribed to Rouse et al. (1973). When people say vegetation index, this is the one that they are usually referring to. <br>
+<center> NDVI =(NIR - red) / (NIR + red)</center><br></p>
+<p>
+<b>NDVI</b> has the advantage of varying between -1 and 1, while the RVI ranges from 0 to infinity.  RVI and NDVI are functionally equivalent and related to each other by the following equation:<br>
+<center>NDVI = ( RVI-1 )/ (RVI + 1)</center>
+</p>
+<p>
+<b>IPVI</b> is the Infrared Percentage Vegetation Index which was first described by Crippen (1990).  Crippen found that the subtraction of the red in the numerator was irrelevant, and proposed this index as a way of improving calculation speed.  It also is restricted to values between 0 and 1, which eliminates the need for storing a sign for the vegetation index values, and it eliminates the conceptual strangeness of negative values for vegetation indices.<br>
+<center> IPVI = NIR / ( NIR + red) </center><br></p>
+<p>IPVI and NDVI are functionally equivalent and related to each other by the following equation:<br>
+<center> IPVI = (NDVI + 1) / 2 </center><br>
+</p>
+<p>
+DVI is the Difference Vegetation Index, which is ascribed in some recent papers to Richardson and Everitt (1992), but appears as VI (vegetation index) in Lillesand and Kiefer (1987).<br>
+<center> DVI = (NIR - red)  </center>
+
+</p>
+<p>
+<a href="http://www.yale.edu/ceo/Documentation/rsvegfaq.html">http://www.yale.edu/ceo/Documentation/rsvegfaq.html</a>
+</p>
+
+        </div>
+      </section>
+
+
+      <section id="experiment-article-section-3">
+        
+        <div id="experiment-article-section-3-icon" 
+        class="icon">
+	  <!-- Enclose the icon image of your lab. -->
+	  <img src="../images/procedure.jpg" />
+	</div>
+     
+        <div id="experiment-article-section-3-heading" 
+        class="heading">
+          Manual
+        </div>
+
+        <div id="experiment-article-section-3-content" 
+        class="content">
+        
+<p>
+<ol>
+
+<li>Change and visualize different vegetation indices available.
+</li>
+</ol>
+</p> 
+
+
+	</div>
+
+      </section>
+
+
+      <section id="experiment-article-section-4">
+
+        <div id="experiment-article-section-4-icon" 
+        class="icon">
+	  <!-- Enclose the icon image of your lab.-->
+	  <img src="../images/simulation.jpg" />
+	</div>
+
+        <div id="experiment-article-section-4-heading" 
+        class="heading">
+          Experiment
+        </div>
+
+        <div id="experiment-article-section-4-content" 
+        class="content">
+          <p>
+<P>
+<APPLET  codebase="classes" code="fokat1.class" width=850 height=500></APPLET>
+
+</P> 	        
+            
+          </p>
+        </div>
+
+      </section>
+
+        <section id="experiment-article-section-5">
+      
+          <div id="experiment-article-section-5-icon" 
+          class="icon">
+	    <!-- Enclose the icon image of your lab.-->
+	    <img src="../images/quizzes.jpg" />
+	  </div>
+
+          <div id="experiment-article-section-5-heading" 
+          class="heading">
+            Quizzes
+          </div>
+
+          <div id="experiment-article-section-5-content" 
+          class="content">
+            
+            <p>
+              
+              <b>Q1.</b> 
+		The two important bands used in various spectral indices are:
+		<br> 
+              <input type="radio" name="q1" id="q1" value="1"> 
+                <font > 
+			a. ____________
+		</font> <br> 
+              <input type="radio" name="q1" id="q1" value="2"> 
+                <font > 
+			b. NIR and R
+		</font> <br> 
+              <input type="radio" name="q1" id="q1" value="3"> 
+                <font > 
+			c. ____________
+		</font> <br> 
+              <input type="radio" name="q1" id="q1" value="4">
+                <font > 
+			d. _____________
+		</font> <br/><br/> 
+              
+              <b>Q2.</b> 
+		2. What is NDVI?
+		<br> 
+              <input type="radio" name="q2" id="q2" value="1"> 
+                <font > 
+			a. ______________
+		</font> <br> 
+		<input type="radio" name="q2" id="q2" value="2"> 
+                <font > 
+			b. _______________
+		</font> <br> 
+              <input type="radio" name="q2" id="q2" value="3"> 
+                <font > 
+			c. Normalized Difference Vegetation Index
+		</font> <br> 
+              <input type="radio" name="q2" id="q2" value="4"> 
+                <font > 
+			d. ________________
+		</font> <br/><br/> 
+            
+
+              <b>Q3.</b> 
+		The values of NDVI range between
+		<br> 
+              <input type="radio" name="q3" id="q3" value="1"> 
+                <font > 
+			a. 1 to -1
+		</font> <br> 
+              <input type="radio" name="q3" id="q3" value="2"> 
+                <font > 
+			b. 0 to 1
+		</font> <br> 
+              <input type="radio" name="q3" id="q3" value="3"> 
+                <font > 
+			c. 0 to -1
+		</font> <br> 
+              <input type="radio" name="q3" id="q3" value="4">
+                <font > 
+			d. -1 to 0
+		</font> <br/><br/> 
+
+
+              <b>Q4.</b> 
+		NIR/(NIR +red) represents
+		<br>
+		
+              <input type="radio" name="q4" id="q4" value="1"> 
+                <font > 
+			a. RVI
+		</font> <br> 
+	 	<input type="radio" name="q4" id="q4" value="2"> 
+                <font > 
+			b. NDVI
+		</font> <br> 
+		<input type="radio" name="q4" id="q4" value="3"> 
+                <font > 
+			c. IPVI
+		</font> <br> 
+              <input type="radio" name="q4" id="q4" value="4">
+                <font > 
+			d. DVI
+		</font> <br/><br/> 
+		
+		
+		
+
+              <b>Q5.</b> 
+		Then index whose value range from 0 to infinity
+		<br> 
+              <input type="radio" name="q5" id="q5" value="1"> 
+                <font > 
+			a. DVI
+		</font> <br> 
+              <input type="radio" name="q5" id="q5" value="2"> 
+                <font > 
+			b. IPVI
+		</font> <br> 
+              <input type="radio" name="q5" id="q5" value="3"> 
+                <font > 
+			c. RVI
+		</font> <br> 
+              <input type="radio" name="q5" id="q5" value="4">
+                <font > 
+			d. VI
+		</font> <br/><br/> 
+              
+              <input type="submit" value="Submit Answers" 
+                class="button" />
+            </p>
+
+          </div>
+
+        </section>
+
+        <section id="experiment-article-section-6">
+	  
+          <div id="experiment-article-section-6-icon" 
+          class="icon">
+	    <!-- Enclose the icon image of your lab. -->
+	    <img src="../images/readings.jpg" />
+	  </div>
+	
+          <div id="experiment-article-section-6-heading" 
+          class="heading">
+	    Feedback
+	  </div>
+	
+          <div id="experiment-article-section-6-content" 
+          class="content">
+	    <p>
+	      Please provide feedback for the experiment.
+	    </p>
+	  </div>
+	
+        </section>
+			
+      </div>
+
+
+    <!-- An article can have a sidebar that contain related 
+    links and additional material (however it is kept optional 
+    at this moment) -->
+    <aside id="lab-article-sidebar" class="default">
+      <!-- put the content that you want to appear in the 
+      sidebar -->	
+    </aside>
+
+
+    <!-- Article footer can display related content and 
+    additional links -->						
+    <footer id="lab-article-footer" class="default">
+      <!-- Put the content that you want to appear here -->
+    </footer>
+
+  </article>
+
+
+  <!-- Links to other labs, about us page can be kept the lab 
+  footer-->
+  <footer id="lab-footer" >
+    <!-- Put the content here-->
+<a href="http://virtual-labs.ac.in/nmeict"target="_blank" >Sponsered by MHRD (NME-ICT) </a> | <a href="http://virtual-labs.ac.in/licensing" target="_blank"> Licensing Terms </a><br>
+		<a  href=""target="_blank">Contact Us</a>|
+<a href="http://lsi.iiit.ac.in" target="_blank">&copy; 2010, Lab for Spatial Informatics, IIIT Hyderabad</a></p>
+  </footer>
+
+</div>		
+
+</body>
+</html>

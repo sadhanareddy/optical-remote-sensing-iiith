@@ -1,0 +1,298 @@
+<!-- This file needs to be edited by the lab developer to suit
+the requirements of their lab in particular.-->
+
+<!-- Add class="default" to include any element as it is
+specified in default.html. 
+Do not include class="default" to the elements that you want to
+edit -->
+
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+
+<div id="experiment"> <!-- The Experiment Document Container-->
+
+  <!-- The lab Header contains the logo and the name of the lab,
+  usually displayed on the top of the page-->
+
+  <header id="experiment-header" class="default">
+  
+    <div id="experiment-header-logo" class="logo">
+      <!-- Enclose the logo image of your lab or write it in 
+      text-->
+      <img src="../images/virtualLabsLogo.jpg" />
+    </div>
+
+    <div id="experiment-header-heading" class="heading">
+      <!-- Write the name of your lab and link it to the home 
+      page of your lab (h1 tag is preferred while writing your 
+      lab name)-->
+      <a href="../index.php">Optical Remote Sensing Lab</a>	
+    </div>
+
+    <!-- Add any additional element you want to add to the lab 
+    header, For example : Help (Enclosing them with suitable 
+    div is recommended)-->
+
+  </header>
+
+
+  <!-- The lab article is the main content area where all the 
+  experiment content sits-->
+  <article id="experiment-article">
+  
+    <!-- The lab article has an header, optional navigational 
+    menu, number of sections, an optional sidebar and a closing 
+    footer-->
+     <div id="experiment-article-breadcrumb" class="breadcrumb">
+     </div>
+    
+      <header id="experiment-article-heading" class="heading">
+        <!-- You can add a welcome message or title of the 
+        experiment here -->
+        Radiometric resolution
+        <!-- Add any additional element if required with proper 
+        enclosing-->
+      </header>
+
+      <!-- Navigation menu is useful to organize the view of 
+      multiple sections inside the article-->
+      <nav id="experiment-article-navigation" class="default">
+        <ul id="experiment-article-navigation-menu">
+          <!-- The menu can be dynamically generated to contain 
+          the headings of your sections or instead write the 
+          menu items of your choice individually enclosedu in 
+          <li> tag as shown below-->
+        </ul>
+      </nav>
+
+      <!-- All the sections of your lab or experiment can be 
+      enclosed together with a div element as shown below-->
+      <div id="experiment-article-sections">
+
+        <!-- First section of the article-->
+        <section id="experiment-article-section-1">
+          
+          <div id="experiment-article-section-1-icon" 
+          class="icon">
+	    <!-- Enclose the icon image of your lab -->
+	    <img src="../images/objective.jpg" />
+	  </div>	
+          
+          <!-- The heading for the section can be enclosed in a 
+          div tag. -->
+          <div id="experiment-article-section-1-heading" 
+          class="heading">
+            Objective
+          </div>
+
+          <!-- Write the section content inside a paragraph 
+          element, You can also include images with <img> tag -->
+          <div id="experiment-article-section-1-content" 
+          class="content">	
+            <p>
+This lab introduces one more type of resolution “Radiometric resolution” which primarily describes the quantization of data levels with respect to their visibility on image. In other words radiometric resolution provides idea about the ‘bit’ level information about the image and how these bits are used to display variations in the image at distinguishable capacity for object identification and information extraction.
+            </p>
+
+        </div>
+
+
+      </section>
+
+      <!-- Second section of the article-->
+      <section id="experiment-article-section-2">
+        
+        <div id="experiment-article-section-2-icon" 
+        class="icon">
+	  <!-- Enclose the icon image of your lab. -->
+	  <img src="../images/theory.jpg" />
+	</div>
+				
+        <!-- The heading for the section can be enclosed in a 
+        div tag. -->
+        <div id="experiment-article-section-2-heading" 
+        class="heading">
+          Theory
+        </div>
+
+
+        <!-- Write the section content inside a paragraph 
+        element, we can also include images with <img> tag -->
+        <div id="experiment-article-section-2-content" 
+        class="content">
+        <p>
+Every time an image is acquired on film or by a sensor, its sensitivity to the magnitude of the electromagnetic energy determines the radiometric resolution. The radiometric resolution of an imaging system describes its ability to discriminate very slight differences in energy. The finer the radiometric resolution of a sensor the more sensitive it is to detecting small differences in reflected or emitted energy</p>
+<table>
+<tr>
+<td width="60%">
+<p>
+Imagery data are represented by positive digital numbers which vary from 0 to (one less than) a selected power of 2. This range corresponds to the number of bits used for coding numbers in binary format. Each bit records an exponent of power 2 (e.g. 1 bit=2 1=2). The maximum number of brightness levels available depends on the number of bits used in representing the energy recorded. Thus, if a sensor used 8 bits to record the data, there would be 28=256 digital values available, ranging from 0 to 255. However, if only 4 bits were used, then only 24=16 values ranging from 0 to 15 would be available. Thus, the radiometric resolution would be much less. Image data are generally displayed in a range of grey tones, with black representing a digital number of 0 and white representing the maximum value (for example, 255 in 8-bit data).<br>
+<a href="http://sar.kangwon.ac.kr/etc/fundam/chapter2/chapter2_5_e.html">http://sar.kangwon.ac.kr/etc/fundam/chapter2/chapter2_5_e.html</a>
+	</p>
+<p>
+The intrinsic radiometric resolution of a sensing system depends on the signal to noise ratio of the detector. In a digital image, the radiometric resolution is limited by the number of discrete quantization levels used to digitize the continuous intensity value.</p>
+<p>
+The images illustrate the effects of the number of quantization levels on the digital image. The first image is a SPOT panchromatic image quantized at 8 bits (i.e. 256 levels) per pixel. The subsequent images show the effects of degrading the radiometric resolution by using fewer quantization levels.</p>
+</td>
+<td>
+<img src="../images/5_theory1.png" align="left"></td>
+</tr>
+</table>
+<p><a href=" http://www.crisp.nus.edu.sg/~research/tutorial/image.htm"> http://www.crisp.nus.edu.sg/~research/tutorial/image.htm</a></p>
+        </div>
+      </section>
+
+
+      <section id="experiment-article-section-3">
+        
+        <div id="experiment-article-section-3-icon" 
+        class="icon">
+	  <!-- Enclose the icon image of your lab. -->
+	  <img src="../images/procedure.jpg" />
+	</div>
+     
+        <div id="experiment-article-section-3-heading" 
+        class="heading">
+          Manual
+        </div>
+
+        <div id="experiment-article-section-3-content" 
+        class="content">
+        
+<p>
+<ol>
+
+ 	<li>In this experiment you are provided with a wavelength slider according to which you can adjust the wavelength emmited by the spectrometer to the object placed on the table. You are provoded with four such objects.  </li>
+<li>Start the experiment by selecting wavelength from slider.Reflected ray will be captured by the lens of the spectrometer and reflectance is calulated. </li>
+<li>Take observations and fill them in the boxes against wavelength and reflectance, provided in the parallel pane, and mark the points.</li>
+<li> Likewise mark atleast 5-6 points and generate graph.
+</li>
+<li>
+ Now, press Compare button to compare your observed graph with the original graph.
+</li>
+</ol>
+</p>     
+
+
+	</div>
+
+      </section>
+
+
+      <section id="experiment-article-section-4">
+
+        <div id="experiment-article-section-4-icon" 
+        class="icon">
+	  <!-- Enclose the icon image of your lab.-->
+	  <img src="../images/simulation.jpg" />
+	</div>
+
+        <div id="experiment-article-section-4-heading" 
+        class="heading">
+          Experiment
+        </div>
+
+        <div id="experiment-article-section-4-content" 
+        class="content">
+         <P>
+<APPLET  codebase="classes" code="fokat1.class" width=850 height=500></APPLET>
+
+</P>  
+        </div>
+
+      </section>
+
+        <section id="experiment-article-section-5">
+      
+          <div id="experiment-article-section-5-icon" 
+          class="icon">
+	    <!-- Enclose the icon image of your lab.-->
+	    <img src="../images/quizzes.jpg" />
+	  </div>
+
+          <div id="experiment-article-section-5-heading" 
+          class="heading">
+            Quizzes
+          </div>
+
+          <div id="experiment-article-section-5-content" 
+          class="content">
+            
+            <p>
+              
+              <b>Q1.</b> 
+              If an image has radiometric resolution of 6 bits, what is the max value that could be represented in the image? <br> 
+              <input type="radio" name="q1" id="q1" value="1"> 
+                <font > a. 128</font> <br> 
+		<input type="radio" name="q1" id="q1" value="2"> 
+                <font > b. 64</font> <br> 
+		<input type="radio" name="q1" id="q1" value="3"> 
+                <font > c. 256</font> <br> 
+              <input type="radio" name="q1" id="q1" value="4">
+                <font > d. 1024  </font> <br/><br/> 
+              
+              <input type="submit" value="Submit Answers" 
+                class="button" />
+            </p>
+
+          </div>
+
+        </section>
+
+        <section id="experiment-article-section-6">
+	  
+          <div id="experiment-article-section-6-icon" 
+          class="icon">
+	    <!-- Enclose the icon image of your lab. -->
+	    <img src="../images/readings.jpg" />
+	  </div>
+	
+          <div id="experiment-article-section-6-heading" 
+          class="heading">
+	    Feedback
+	  </div>
+	
+          <div id="experiment-article-section-6-content" 
+          class="content">
+	    <p>
+	      Please provide feedback for the experiment.
+	    </p>
+	  </div>
+	
+        </section>
+			
+      </div>
+
+
+    <!-- An article can have a sidebar that contain related 
+    links and additional material (however it is kept optional 
+    at this moment) -->
+    <aside id="lab-article-sidebar" class="default">
+      <!-- put the content that you want to appear in the 
+      sidebar -->	
+    </aside>
+
+
+    <!-- Article footer can display related content and 
+    additional links -->						
+    <footer id="lab-article-footer" class="default">
+      <!-- Put the content that you want to appear here -->
+    </footer>
+
+  </article>
+
+
+  <!-- Links to other labs, about us page can be kept the lab 
+  footer-->
+  <footer id="lab-footer" >
+    <!-- Put the content here-->
+<a href="http://virtual-labs.ac.in/nmeict"target="_blank" >Sponsered by MHRD (NME-ICT) </a> | <a href="http://virtual-labs.ac.in/licensing" target="_blank"> Licensing Terms </a><br>
+		<a  href=""target="_blank">Contact Us</a>|
+<a href="http://lsi.iiit.ac.in" target="_blank">&copy; 2010, Lab for Spatial Informatics, IIIT Hyderabad</a></p>
+  </footer>
+
+</div>		
+
+</body>
+</html>

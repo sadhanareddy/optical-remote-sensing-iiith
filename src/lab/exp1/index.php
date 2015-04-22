@@ -39,9 +39,13 @@ $data['nav'] = $nav;
 
 $vlab_url = "http://virtual-labs.ac.in/"; 
 $css_js   = "../";
- $lab_url  = "http://".$_SERVER['HTTP_HOST'] . "/labs/cse21/index.php";
-$exp_url  = "http://".$_SERVER['HTTP_HOST'] . "/labs/cse21/exp1/index.php";
-$base_url = "http://".$_SERVER['HTTP_HOST'] . $_SERVER['SCRIPT_NAME']; 
+# $lab_url  = "http://".$_SERVER['HTTP_HOST'] . "/labs/cse21/index.php";
+ $lab_url  = "../index.php";
+#$exp_url  = "http://".$_SERVER['HTTP_HOST'] . "/labs/cse21/exp1/index.php";
+$exp_url  = "index.php";
+#$base_url = "http://".$_SERVER['HTTP_HOST'] . $_SERVER['SCRIPT_NAME']; 
+$base_url = $exp_url;
+
 
 include('../exp_template.php');
 
